@@ -33,22 +33,22 @@
     	position:relative;
     }
     
-    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+    #contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form input[type="url"], #contact-form textarea, #contact-form button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
     
-    #contact {
+    #contact-form {
     	background:#F9F9F9;
     	padding:25px;
     	margin:50px 0;
     }
     
-    #contact h3 {
+    #contact-form h3 {
     	color: #F96;
     	display: block;
     	font-size: 30px;
     	font-weight: 400;
     }
     
-    #contact h4 {
+    #contact-form h4 {
     	margin:5px 0 15px;
     	display:block;
     	font-size:13px;
@@ -62,7 +62,7 @@
     	width: 100%;
     }
     
-    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+    #contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form input[type="url"], #contact-form textarea {
     	width:100%;
     	border:1px solid #CCC;
     	background:#FFF;
@@ -70,20 +70,20 @@
     	padding:10px;
     }
     
-    #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+    #contact-form input[type="text"]:hover, #contact-form input[type="email"]:hover, #contact-form input[type="tel"]:hover, #contact-form input[type="url"]:hover, #contact-form textarea:hover {
     	-webkit-transition:border-color 0.3s ease-in-out;
     	-moz-transition:border-color 0.3s ease-in-out;
     	transition:border-color 0.3s ease-in-out;
     	border:1px solid #AAA;
     }
     
-    #contact textarea {
+    #contact-form textarea {
     	height:100px;
     	max-width:100%;
       resize:none;
     }
     
-    #contact button[type="submit"] {
+    button[type="submit"] {
     	cursor:pointer;
     	width:100%;
     	border:none;
@@ -93,16 +93,18 @@
     	font-size:15px;
     }
     
-    #contact button[type="submit"]:hover {
+    #contact-form button[type="submit"]:hover {
     	background:#09C;
     	-webkit-transition:background 0.3s ease-in-out;
     	-moz-transition:background 0.3s ease-in-out;
     	transition:background-color 0.3s ease-in-out;
     }
     
-    #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
     
-    #contact input:focus, #contact textarea:focus {
+    
+    #contact-form button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+    
+    #contact-form input:focus, #contact-form textarea:focus {
     	outline:0;
     	border:1px solid #999;
     }
@@ -119,28 +121,81 @@
      color:#888;
     }
   </style>
+  
+  <button type="submit" style="height: 40px;" onclick="window.location='index.html';">Back</button>
     
   <div class="container">  
-    <form id="contact">
-      <h3>Quick Contact</h3>
+    <form id="contact-form" method="POST" action="https://formspree.io/uclpaoli@gmail.com">
+      <h2></b>Universal Chimney Lining</h2>
+      <h3>Contact Us!</h3>
       <h4>Contact us today, and get reply with in 24 hours!</h4>
       <fieldset>
-        <input id="name" placeholder="Your name" type="text" tabindex="1" autofocus>
+        <input name="name" placeholder="Your name" type="text" tabindex="1" autofocus>
       </fieldset>
       <fieldset>
-        <input id="phone" placeholder="Your Phone Number" type="tel" tabindex="3">
+        <input name="phone" placeholder="Your Phone Number" type="tel" tabindex="3">
       </fieldset>
       <fieldset>
-        <textarea id="message" placeholder="Type your Message Here...." tabindex="5"></textarea>
+        <textarea name="message" placeholder="Type your Message Here...." tabindex="5"></textarea>
       </fieldset>
       <fieldset>
         <button type="submit" style="height: 40px;">Submit</button>
       </fieldset>
     </form>
- 
-  
+
   </div>
 
+  
+  
+  
+  <!-- ********** Write messges to firebase database *******
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-  <script src="js/contact-form.js"></script>
+  <script>
+    // Upload message to firebase database
+    
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAN9Hk3Rp2x5p1nh8-8GbXz4aXPPdUt4VY",
+        authDomain: "uclmessages-b4aaa.firebaseapp.com",
+        databaseURL: "https://uclmessages-b4aaa.firebaseio.com",
+        projectId: "uclmessages-b4aaa",
+        storageBucket: "uclmessages-b4aaa.appspot.com",
+        messagingSenderId: "17157242884"
+    };
+    firebase.initializeApp(config);
+    
+    var messagesRef = firebase.database().ref('messages');
+  
+    //Process contact message submission
+    
+    document.getElementById('contact-form').addEventListener('submit', SubmitForm)
+    
+    function SubmitForm(e){
+        e.preventDefault();
+        
+        var name = getInputVal('name');
+        var phone = getInputVal('phone');
+        var message = getInputVal('message');
+        
+        saveMessage(name, phone, message);
+        alert('messges submitted to firebase');
+    }
+    
+    // Function to get form values
+    function getInputVal(id){
+        return document.getElementById(id).value;
+    }
+    
+    // Save message to firebase
+    function saveMessage(name, phone, message){
+        var newMessageRef = messagesRef.push();
+        newMessageRef.set({
+            name: name,
+            phone: phone,
+            message: message
+        })
+    }
+  </script>
+  -->
+  
 </html>
