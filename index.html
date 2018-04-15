@@ -54,10 +54,15 @@
         width: auto\9; /* ie8 */
       }
 
-    
-
-
-
+      #feature {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }    
+      
+      #feature img {
+        width: 50px;
+        height: 50px;
+      }
 
 
       /* Tab Stuff */
@@ -105,14 +110,12 @@
       .photos-thumbnail img {
         border: 1px solid #ddd;
         border-radius: 4px;
-        padding: 5px; 
-        width: 150px;
-        height: 150px;
+        margin: 10px; 
+        width: 100px;
+        height: 100px;
       }
       
-      #photos-container img:hover {
-        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-      }
+      
 
       /* The Modal (background) */
       .modal {
@@ -130,71 +133,131 @@
       }
       
       /* Modal Content (image) */
+      .row > .column {
+        padding: 0 8px;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Create four equal columns that floats next to eachother */
+      .column {
+        float: left;
+        width: 25%;
+      }
+      
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+      }
+      
+      /* Modal Content */
       .modal-content {
-          margin: auto;
-          display: block;
-          width: 80%;
-          max-width: 700px;
-      }
-      
-      /* Caption of Modal Image */
-      #caption {
-          margin: auto;
-          display: block;
-          width: 80%;
-          max-width: 700px;
-          text-align: center;
-          color: #ccc;
-          padding: 10px 0;
-          height: 150px;
-      }
-      
-      /* Add Animation */
-      .modal-content, #caption {    
-          -webkit-animation-name: zoom;
-          -webkit-animation-duration: 0.6s;
-          animation-name: zoom;
-          animation-duration: 0.6s;
-      }
-      
-      @-webkit-keyframes zoom {
-          from {-webkit-transform:scale(0)} 
-          to {-webkit-transform:scale(1)}
-      }
-      
-      @keyframes zoom {
-          from {transform:scale(0)} 
-          to {transform:scale(1)}
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
       }
       
       /* The Close Button */
       .close {
-          position: absolute;
-          top: 15px;
-          right: 35px;
-          color: #f1f1f1;
-          font-size: 40px;
-          font-weight: bold;
-          transition: 0.3s;
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
       }
       
       .close:hover,
       .close:focus {
-          color: #bbb;
-          text-decoration: none;
-          cursor: pointer;
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
       }
       
-      /* 100% Image Width on Smaller Screens */
-      @media only screen and (max-width: 700px){
-          .modal-content {
-              width: 100%;
-          }
+      /* Hide the slides by default */
+      .mySlides {
+        display: none;
       }
-
-
-
-
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* Caption text */
+      .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+      }
+      
+      img.demo {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+      
+      img.hover-shadow {
+        transition: 0.3s
+      }
+      
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+      }
 
 
 
@@ -215,10 +278,6 @@
       }
 
 
-
-
-
-
       table {
         font-family: arial, sans-serif;
         border-collapse: collapse;
@@ -234,11 +293,6 @@
       tr:nth-child(even) {
         background-color: #dddddd;
       }
-
-
-
-
-
 
 
       footer {
@@ -270,15 +324,27 @@
         
         <div class="header-btns">
           <input type="button" id="headerBtn1" value="Call" onclick="call()"/>
-          <input type="button" id="headerBtn2" value="Request Call"/>
+          <input type="button" id="headerBtn2" value="Request Call" onclick="window.location='request-call.html';"/>
           <input type="button" id="headerBtn3" value="Message" onclick="window.location='contact-form.html';"/>
         </div>
 
     </header>
+    
+    <div id="feature">
+      <div id="feature-left">
+        <p style="font-size:12px;">
+          Fully licensed and insured.  <br>Paoli, PA.  #PA-138987
+        </p>
+      </div>
+      
+      <div id="feature-right">
+          <img src="img/feature1.jpg" onclick="openModal();currentSlide(01)" class="hover-shadow" hspace="10">
+          <img src="img/feature2.jpg" onclick="openModal();currentSlide(02)" class="hover-shadow">
+      </div>
+    </div>
 
-    <p alignment="center">
-      Some text is going to go here
-    </p>    
+    <p>"Customer service is our top priority everytime"</p>
+   
 
     <!-- Page Content -->
     <div class="main-body">
@@ -286,28 +352,46 @@
       <!-- Tab System -->
       <div class="main-tabs">
         <button class="tablinks" id="photos-tab" onclick="openCity(event, 'photos-container')">Photos</button>
-        <button class="tablinks" id="services-tab" onclick="openCity(event, 'services-container')">Services / Pricing</button>
+        <button class="tablinks" id="services-tab" onclick="openCity(event, 'services-container')">Services</button>
         <button class="tablinks" id="reviews-tab" onclick="openCity(event, 'reviews-container')">Reviews</button>
       </div>
            
            
            
       <div id="photos-container" class="tabcontent">
-
-        <div class="photos-thumbnail">
-          <img id="myImg" src="img/photos-page/photo1.jpg" width="200" height="200">
-          <img id="myImg" src="img/photos-page/photo2.jpg" width="200" height="200">
+        
+        <div class="photos-thumbnail" align="center">
+          <!-- two photos listed as feature -->
+          <img src="img/photos-page/photo-01.jpg" onclick="openModal();currentSlide(03)" class="hover-shadow">
+          <img src="img/photos-page/photo-02.jpg" onclick="openModal();currentSlide(04)" class="hover-shadow">
+          <img src="img/photos-page/photo-03.jpg" onclick="openModal();currentSlide(05)" class="hover-shadow">
+          <img src="img/photos-page/photo-04.jpg" onclick="openModal();currentSlide(06)" class="hover-shadow">
+          <img src="img/photos-page/photo-05.jpg" onclick="openModal();currentSlide(07)" class="hover-shadow">
+          <img src="img/photos-page/photo-06.jpg" onclick="openModal();currentSlide(08)" class="hover-shadow">
+          <img src="img/photos-page/photo-07.jpg" onclick="openModal();currentSlide(09)" class="hover-shadow">
+          <img src="img/photos-page/photo-08.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+          <img src="img/photos-page/photo-09.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+          <img src="img/photos-page/photo-10.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+          <img src="img/photos-page/photo-11.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+          <img src="img/photos-page/photo-12.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+          <img src="img/photos-page/photo-13.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow">
+          <img src="img/photos-page/photo-14.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow">
+          <img src="img/photos-page/photo-15.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow">
+          <img src="img/photos-page/photo-16.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow">
+          <img src="img/photos-page/photo-17.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow">
+          <img src="img/photos-page/photo-18.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow">
+          <img src="img/photos-page/photo-19.jpg" onclick="openModal();currentSlide(21)" class="hover-shadow">
+          <img src="img/photos-page/photo-20.jpg" onclick="openModal();currentSlide(22)" class="hover-shadow">
+          <img src="img/photos-page/photo-21.jpg" onclick="openModal();currentSlide(23)" class="hover-shadow">
+          <img src="img/photos-page/photo-22.jpg" onclick="openModal();currentSlide(24)" class="hover-shadow">
+          <img src="img/photos-page/photo-23.jpg" onclick="openModal();currentSlide(25)" class="hover-shadow">
+          
         </div>
         
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
-        </div>
       </div> 
            
            
-           
+    
            
       <div id="services-container" class="tabcontent">
         
@@ -318,7 +402,7 @@
   
           <div class="card">
             <div class="card-header" role="tab" id="headingOne">            
-                <label data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Installations +</label>            
+                <label data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Chimney Liner Installation $500-$1700</label>            
             </div>
             
             
@@ -326,13 +410,7 @@
             <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
               
               <div class="card-body">
-                
-                <b><u>
-                Chimney Liner Installed gas/oil appliances $500-$1700
-                </b></u>
-                
-                <br>
-                
+                            
                 It is recommended that you install a new metal (usually stainless steel) chimney liner in your chimney for one or more of the following reasons:
                 <br><br>
                 
@@ -393,47 +471,132 @@
             </div>
           </div>
           
-          
           <div class="card">
             <div class="card-header" role="tab" id="headingTwo">
-                <label class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Cleaning</label>
+                <label class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Chimney Certifications</label>
               </h5>
             </div>
             <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
               <div class="card-body">
-                  The NFPA 211 code book states that all working chimney flues should be inspected annually and cleaned as needed.
-                  <br><br>
-                  Our high powered HEPA filtered chimney cleaning vacuums ensure that we do not leave a speck of dirt behind.
-                  <br><br>
-                  For service please call 610-909-5585 or contact us today to schedule your chimney cleaning.
-                  <br><br>
-                  More Information on Chimeny Sweeps & Cleaning
-                  The inspection / certification report saves money compared to a chimney cleaning and shows a formal record of a chimney inspection being performed by a certified professional. Chimney Saftey Institute of America
-                  <br><br>
-                  This is especially important for insurance purposes, home sales, and HOA requirements.
-                  <br><br>
-                  Whenever we enter your home we treat it with extra TLC. Wearing booties to every cleaning or inspection, using multiple runners and drop cloths where necessary.
+                  Please call for inquiry
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="card-header" role="tab" id="headingThree">
-                <label class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Relining</label>
+                <label class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Cleaning $130 - $250</label>
             </div>
             <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                Cleaning includes a dry clean (sweep) to remove all loose creosote and soot i a chimney flue system and fireplace system.  
+                <br><br>
+                Prefabricated Fireplace $130
+                <br>
+                Masonry Fireplace $150
+                <br>
+                Wood Stove $150
+                <br>
+                Oil Burning Flue System $250
               </div>
             </div>
           </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="headingFour">
+                <label class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Chimney Caps $130 - $200</label>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="card-body">
+                  Price is determined by the size and does not include caps over 13" x 13".  Includes installation
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="headingFive">
+                <label class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Chimney Liner for Wood Burning Fireplace $3500 - $6500</label>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+              <div class="card-body">
+                  New chimney liners installed for wood burning fireplaces include a lifetime guarantee. These liners must be sized properly and insulated completely.  A new chimney liner for a fireplace does not guarantee that your fireplace will draft properly.  Please call with inquiries.
+              </div>
+            </div>
+          </div>
+
+
+
         </div> 
       </div>
       
       <div id="reviews-container" class="tabcontent">
         <h3>Reviews</h3>
-        <p>Reviews will go here</p>
+        <p>Reviews page is currently under construction</p>
       </div>
       
+      
+      
+      
+      
+      <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            
+            <div class="mySlides">
+              <img src="img/feature1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="img/feature2.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="img/photos-page/photo-01.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <img src="img/photos-page/photo-02.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides"><img src="img/photos-page/photo-03.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-04.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-05.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-06.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-07.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-08.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-09.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-10.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-11.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-12.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-13.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-14.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-15.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-16.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-17.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-18.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-19.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-20.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-21.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-22.jpg" style="width:100%"></div>
+            <div class="mySlides"><img src="img/photos-page/photo-23.jpg" style="width:100%"></div>
+        
+  
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Caption text 
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            -->
+           
+          </div>
+        </div>
+        
 
     </div>
     <!-- /.container -->
@@ -475,9 +638,9 @@
     // ********** Call Button **********
     function call(){
       if (mobilecheck() == false) {
-        alert("Phone not detected.  Call (555)555-5555");
+        alert("Phone not detected.  Call (484) 321-3695");
       } else {
-        window.open('tel: 555-555-5555',
+        window.open('tel: 484-321-3695',
           '_blank' // <- This is what makes it open in a new window.
         );
       }
@@ -508,28 +671,47 @@
     
     
     // **********Modal for photos**************
-    var modal = document.getElementById('myModal');
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('myImg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
+    // Open the Modal
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
     }
     
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-        modal.style.display = "none";
+    // Close the Modal
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
     }
     
+    var slideIndex = 1;
+    showSlides(slideIndex);
     
-  
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    
   </script>
 
 </html>

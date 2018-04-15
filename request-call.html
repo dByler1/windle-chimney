@@ -45,14 +45,14 @@
     #contact-form h3 {
     	color: #F96;
     	display: block;
-    	font-size: 50px;
+    	font-size: 30px;
     	font-weight: 400;
     }
     
     #contact-form h4 {
     	margin:5px 0 15px;
     	display:block;
-    	font-size:50px;
+    	font-size:13px;
     }
     
     fieldset {
@@ -69,7 +69,6 @@
     	background:#FFF;
     	margin:0 0 5px;
     	padding:10px;
-      font-size: 30px;
     }
     
     #contact-form input[type="text"]:hover, #contact-form input[type="email"]:hover, #contact-form input[type="tel"]:hover, #contact-form input[type="url"]:hover, #contact-form textarea:hover {
@@ -85,16 +84,14 @@
       resize:none;
     }
     
-    
-
-    button {
+    button[type="submit"] {
     	cursor:pointer;
     	width:100%;
     	border:none;
     	background:#b9656c;
     	color:#FFF;
     	margin:0 0 5px;
-      font-size: 50px;
+    	font-size:15px;
     }
     
     #contact-form button[type="submit"]:hover {
@@ -126,24 +123,20 @@
     }
   </style>
   
-  <button type="back" style="height: 100px;" onclick="window.location='index.html';">Back</button>
+  <button type="submit" style="height: 40px;" onclick="window.location='index.html';">Back</button>
     
   <div class="container">  
     <form id="contact-form" method="POST" action="https://formspree.io/uclpaoli@gmail.com">
-      <h4></b>Universal Chimney Lining</h4><br>
-      <h3>Contact Us!</h3>
-      <h4><br></h4>
-      <fieldset>
-        <input name="name" placeholder="Your name" type="text" tabindex="1" autofocus>
-      </fieldset>
+      <h2></b>Universal Chimney Lining</h2>
+      <h3>Reqest Call</h3>
+      <h4>Provide your phone number <br>We will call you back within 24 hrs!</h4>
+      
       <fieldset>
         <input name="phone" placeholder="Your Phone Number" type="tel" tabindex="3">
       </fieldset>
+    
       <fieldset>
-        <textarea name="message" placeholder="Type your Message Here...." tabindex="5"></textarea>
-      </fieldset>
-      <fieldset>
-        <button type="submit" style="height: 100px; font-size: 50px;">Submit</button>
+        <button type="submit" style="height: 40px;">Submit</button>
       </fieldset>
     </form>
 
