@@ -1,0 +1,240 @@
+
+header {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.profile-img{
+    max-height: 250px;
+    max-width: 250px;
+    min-height: 75px;
+    min-width: 75px;
+} 
+
+.list-unstyled {
+    margin-top: 20px;
+}
+
+/* Header call to action buttons */
+
+.btn-outline-secondary {
+    color: #F06073;
+    border-color: #F06073;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #b9656c;
+    border-color: #F06073;
+}
+.btn-outline-secondary:focus {
+    outline: none !important;
+}
+
+.btn-outline-secondary:active {
+    color: #fff;
+    background-color: #b9656c !important;
+    border-color: #F06073 !important;
+}
+.call-to-action-btns {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* fix button text overflow */
+
+.btn{
+    white-space:normal !important;
+    word-wrap: break-word; 
+}
+
+
+/* button group buttons - photos/services/reviews */
+.open-button {
+    margin: 0px !important;
+}
+
+.btn-outline-info {
+    color: #4c4f5f;
+    border-color: #b9656c;
+}
+
+.btn-outline-info:hover {
+    color: #fff;
+    background-color: #b9656c;
+    border-color: #b9656c;
+}
+
+.btn-outline-info:active {
+    color: #fff;
+    background-color: #b9656c !important;
+    border-color: #b9656c !important;
+}
+
+/* Services buttons */
+
+.btn-outline-primary {
+    color: #4c4f5f;
+    background-color: transparent;
+    background-image: none;
+    border-color: #4c4f5f;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #999;
+    border-color: #4c4f5f;
+}
+
+.btn-outline-primary:active {
+    color: #fff;
+    background-color: #999 !important;
+    border-color: #4c4f5f !important;
+}
+
+
+
+/* Gallery photos */
+
+.galleryPhoto_1 {
+    background-image: url('../img/photos-page/photo-01.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.galleryPhoto_2 {
+    background-image: url('../img/photos-page/photo-02.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+
+.galleryPhoto_3 {
+    background-image: url('../img/photos-page/photo-03.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+
+.galleryPhoto_4 {
+    background-image: url('../img/photos-page/photo-04.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_5 {
+    background-image: url('../img/photos-page/photo-05.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_6 {
+    background-image: url('../img/photos-page/photo-06.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+
+.galleryPhoto_7 {
+    background-image: url('../img/photos-page/photo-07.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_8 {
+    background-image: url('../img/photos-page/photo-08.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_9 {
+    background-image: url('../img/photos-page/photo-09.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_10 {
+    background-image: url('../img/photos-page/photo-10.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_11 {
+    background-image: url('../img/photos-page/photo-11.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_12 {
+    background-image: url('../img/photos-page/photo-12.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_13 {
+    background-image: url('../img/photos-page/photo-13.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_14 {
+    background-image: url('../img/photos-page/photo-14.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_15 {
+    background-image: url('../img/photos-page/photo-15.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_16 {
+    background-image: url('../img/photos-page/photo-16.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_17 {
+    background-image: url('../img/photos-page/photo-17.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_18 {
+    background-image: url('../img/photos-page/photo-18.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_19 {
+    background-image: url('../img/photos-page/photo-19.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_20 {
+    background-image: url('../img/photos-page/photo-20.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_21 {
+    background-image: url('../img/photos-page/photo-21.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_22 {
+    background-image: url('../img/photos-page/photo-22.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+.galleryPhoto_23 {
+    background-image: url('../img/photos-page/photo-23.jpeg');
+    background-size:cover;
+    background-position:center;
+    height: 200px;
+}
+

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Windle Chimney and Fireplace</title>
+
+    <!-- Bootstrap core CSS: Used for services accordian -->
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="archive_styles.css" />
+  
+    <!-- Custom styles for this template 
+    <link href="css/modern-business.css" rel="stylesheet">
+-->
+    <script src="https://use.fontheaderBtn2awesome.com/e69567822b.js" type="text/javascript"></script>
+  
+  </head>
+  <body onload="onload()">  
+  
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col-6">
+            <img class="img-fluid" id="logo" src="img/UCL-website.png" alt="MainLogo">
+          </div>
+          <div class="col">
+              <button type="button" class="btn btn-secondary btn-lg btn-block" id="headerBtn1" value="Call" onclick="call()"> Call </button>
+              <button type="button" class="btn btn-secondary btn-lg btn-block" id="headerBtn2" value="Request Call" onclick="window.location='request-call.html';">Request a Call </button>
+              <button type="button" class="btn btn-secondary btn-lg btn-block" id="headerBtn3" value="Message" onclick="window.location='contact-form.html';">Message</button>
+          </div>
+       
+        </div>
+      </header>
+      <div class="row header-second-line">
+        <div class="col">
+            <dl>
+              <dt>Fully licensed and insured</dt>
+              <dd>Paoli, PA</dd>
+              <dd>#PA-138987</dd>
+            </dl>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid" src="img/feature1.jpeg" alt="Isaac Windle">
+                <div class="card-body">
+                  <h5 class="card-title">Isaac Windle - Owner and Founder</h5>
+                  <p class="card-text">"Customer service is our top priority, everytime"</p>
+                </div>
+              </div>
+        </div>
+        
+      </div>
+  
+      <!-- Page Content -->
+      <div class="main-body">
+
+        <!-- Tab System -->
+        <div class="main-tabs">
+          <div class="row no-gutters">
+            <div class="col">
+              <button type="button" class="tablinks btn btn-primary btn-lg btn-block" id="photos-tab" onclick="openCity(event, 'photos-container')">Photos</button>
+            </div>
+            <div class="col">
+              <button type="button" class="tablinks btn btn-primary btn-lg btn-block" id="services-tab" onclick="openCity(event, 'services-container')">Services</button>
+            </div>
+            <div class="col">
+              <button type="button" class="tablinks btn btn-primary btn-lg btn-block" id="reviews-tab" onclick="openCity(event, 'reviews-container')">Reviews</button>
+            </div>
+          </div>
+        </div>
+            
+            
+            
+        <div id="photos-container" class="tabcontent">
+          
+          <div class="photos-thumbnail" align="center">
+            <!-- two photos listed as feature -->
+            <img src="img/photos-page/photo-01.jpeg" onclick="openModal();currentSlide(03)" class="hover-shadow">
+            <img src="img/photos-page/photo-02.jpeg" onclick="openModal();currentSlide(04)" class="hover-shadow">
+            <img src="img/photos-page/photo-03.jpeg" onclick="openModal();currentSlide(05)" class="hover-shadow">
+            <img src="img/photos-page/photo-04.jpeg" onclick="openModal();currentSlide(06)" class="hover-shadow">
+            <img src="img/photos-page/photo-05.jpeg" onclick="openModal();currentSlide(07)" class="hover-shadow">
+            <img src="img/photos-page/photo-06.jpeg" onclick="openModal();currentSlide(08)" class="hover-shadow">
+            <img src="img/photos-page/photo-07.jpeg" onclick="openModal();currentSlide(09)" class="hover-shadow">
+            <img src="img/photos-page/photo-08.jpeg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+            <img src="img/photos-page/photo-09.jpeg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+            <img src="img/photos-page/photo-10.jpeg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+            <img src="img/photos-page/photo-11.jpeg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+            <img src="img/photos-page/photo-12.jpeg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+            <img src="img/photos-page/photo-13.jpeg" onclick="openModal();currentSlide(15)" class="hover-shadow">
+            <img src="img/photos-page/photo-14.jpeg" onclick="openModal();currentSlide(16)" class="hover-shadow">
+            <img src="img/photos-page/photo-15.jpeg" onclick="openModal();currentSlide(17)" class="hover-shadow">
+            <img src="img/photos-page/photo-16.jpeg" onclick="openModal();currentSlide(18)" class="hover-shadow">
+            <img src="img/photos-page/photo-17.jpeg" onclick="openModal();currentSlide(19)" class="hover-shadow">
+            <img src="img/photos-page/photo-18.jpeg" onclick="openModal();currentSlide(20)" class="hover-shadow">
+            <img src="img/photos-page/photo-19.jpeg" onclick="openModal();currentSlide(21)" class="hover-shadow">
+            <img src="img/photos-page/photo-20.jpeg" onclick="openModal();currentSlide(22)" class="hover-shadow">
+            <img src="img/photos-page/photo-21.jpeg" onclick="openModal();currentSlide(23)" class="hover-shadow">
+            <img src="img/photos-page/photo-22.jpeg" onclick="openModal();currentSlide(24)" class="hover-shadow">
+            <img src="img/photos-page/photo-23.jpeg" onclick="openModal();currentSlide(25)" class="hover-shadow">
+            
+          </div>
+          
+        </div> 
+                
+        <div id="services-container" class="tabcontent">
+          
+          <h4 align="center"><b>Estimates are FREE</b></h4>
+          
+          <!-- Accordian -->      
+          <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
+    
+            <div class="card">
+              <div class="card-header" role="tab" id="headingOne">            
+                  <label data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Chimney Liner Installation $500-$1700</label>            
+              </div>
+              
+              
+              
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                
+                <div class="card-body">
+                              
+                  It is recommended that you install a new metal (usually stainless steel) chimney liner in your chimney for one or more of the following reasons:
+                  <br><br>
+                  
+                  <p style="margin-left: 40px">
+                  •Your appliance(s) are currently exhausting through a clay flue (pipe) system.  These masonry flues develop cracks and holes over time.  Excessive moisture from high efficiency appliance exhaust drastically accelerates masonry degradation which may lead to holes, blockages, and structural damage.
+                  <br><br>
+                  •Heater flue is lined with old aluminum or other metal pipe that is showing signs of degradation.
+                  <br><br>
+                  •No clay of flue pipe exists in your chimney and so your appliances are venting through an open brick cavity.  This is called "open chase" and is common in pre 1920's construction.
+                  </p>
+                  
+                  <br><br>
+                  $500-$1700 price is set by the diameter of pipe needed to vent the total combined BTU input of appliances being vented as well as height/length of the liner.  Additional cost may be included with the installations requiring extensive staging for chimney access as well as for chimney liners larger than 5.5" in diameter.
+                  
+                  <br><br>
+                  *All 316Ti stainless steel chimney liners include a lifetime guarantee.
+                  
+                  <br><br>
+                  <p align="center"><b>316 Ti Stainless Steel Chimney Liner Installations</b></p>
+                  <table>
+                    <tr>
+                      <th></th>
+                      <th>3 in.</th>
+                      <th>4 in.</th>
+                      <th>5 in.</th>
+                      <th>5.5 in.</th>
+                      <th>6 in.</th>
+                    </tr>
+                    <tr>
+                      <td> 20 ft or less</td>
+                      <td>$500</td>
+                      <td>$600</td>
+                      <td>$900</td>
+                      <td>$1300</td>
+                      <td>$1400</td>
+                    </tr>
+                    <tr>
+                      <td>21 to 30 ft</td>
+                      <td>$600</td>
+                      <td>$700</td>
+                      <td>$1200</td>
+                      <td>$1450</td>
+                      <td>$1600</td>
+                    </tr>
+                    <tr>
+                      <td>31 to 40 ft</td>
+                      <td>$700</td>
+                      <td>$800</td>
+                      <td>$1400</td>
+                      <td>$1550</td>
+                      <td>$1700</td>
+                    </tr>
+                  </table>
+                  These prices include replacement of damaged/corroded galvanized connector piping for appliances.  More material costs may be applied if excessive connector piping needs replacement.
+                  <br><br>
+                  Insulation is required for solid fueld burning appliances and open chase chimneys.  More material costs will be applied if insulation is required.
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header" role="tab" id="headingTwo">
+                  <label class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Chimney Certifications</label>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="card-body">
+                    Please call for inquiry
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" role="tab" id="headingThree">
+                  <label class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Cleaning $130 - $250</label>
+              </div>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="card-body">
+                  Cleaning includes a dry clean (sweep) to remove all loose creosote and soot i a chimney flue system and fireplace system.  
+                  <br><br>
+                  Prefabricated Fireplace $130
+                  <br>
+                  Masonry Fireplace $150
+                  <br>
+                  Wood Stove $150
+                  <br>
+                  Oil Burning Flue System $250
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" role="tab" id="headingFour">
+                  <label class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Chimney Caps $130 - $200</label>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="card-body">
+                    Price is determined by the size and does not include caps over 13" x 13".  Includes installation
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" role="tab" id="headingFive">
+                  <label class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Chimney Liner for Wood Burning Fireplace $3500 - $6500</label>
+                </h5>
+              </div>
+              <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="card-body">
+                    New chimney liners installed for wood burning fireplaces include a lifetime guarantee. These liners must be sized properly and insulated completely.  A new chimney liner for a fireplace does not guarantee that your fireplace will draft properly.  Please call with inquiries.
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        
+        <div id="reviews-container" class="tabcontent">
+          <h3>Reviews</h3>
+          <p>Reviews page is currently under construction</p>
+        </div>
+        <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              
+              <div class="mySlides">
+                <img src="img/feature1.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <img src="img/feature2.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <img src="img/photos-page/photo-01.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <img src="img/photos-page/photo-02.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides"><img src="img/photos-page/photo-03.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-04.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-05.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-06.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-07.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-08.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-09.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-10.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-11.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-12.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-13.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-14.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-15.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-16.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-17.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-18.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-19.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-20.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-21.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-22.jpg" style="width:100%"></div>
+              <div class="mySlides"><img src="img/photos-page/photo-23.jpg" style="width:100%"></div>
+          
+    
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <!-- Caption text 
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+              -->
+            
+            </div>
+          </div>
+      </div>
+    </div>
+      <!-- /.container -->
+      <!-- Footer -->
+      <footer>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
+
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+     <script src="archive_indexJS.js"></script>
+
+  </body>
+</html>
