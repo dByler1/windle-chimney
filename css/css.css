@@ -27,7 +27,7 @@ header {
     border-color: #F06073;
 }
 .btn-outline-secondary:focus {
-    outline: none !important;
+    outline: 0 !important;
 }
 
 .btn-outline-secondary:active {
@@ -45,6 +45,11 @@ header {
 .btn{
     white-space:normal !important;
     word-wrap: break-word; 
+}
+
+footer {
+    height: 150px;
+    margin-top: 30px;
 }
 
 
