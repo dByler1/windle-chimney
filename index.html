@@ -13,7 +13,7 @@
 
     <div class="container">
         <header>
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="col-md-6 bg-light">
                     <img class="img-fluid mx-auto d-block" id="logo" src="img/UCL-website.png" alt="MainLogo">
                 </div>
@@ -26,8 +26,8 @@
                 </div>
                 
             </div>
-            <div class="row header-second-row">
-                <div class="col col-md-6 bg-light">
+            <div class="row header-second-row no-gutters">
+                <div class="col-8 col-md-6 bg-light">
                         <ul class="list-unstyled">
                             <li class="media">
                                 <div class="media-body">
@@ -38,7 +38,7 @@
                             </li>  
                         </ul>
                 </div>
-                <div class="col col-md-4">
+                <div class="col-4 col-md-4">
                     <div class="media d-flex justify-content-md-center">
                         <!-- <img class="ml-3 img-fluid" src="img/ic_perm_phone_msg_black_24dp_2x.png" alt="call icon"> -->
                         <figure class="figure">
@@ -52,7 +52,7 @@
 
         <div id="accordion">
             <div class="btn-group btn-group-lg d-flex">
-                    <button type="button" class="btn btn-outline-info btn-block open-button" data-parent="#accordion" data-toggle="collapse" data-target="#servicesCollapse" aria-expanded="true" aria-controls="collapseExample">Services</button>
+                <button type="button" class="btn btn-outline-info btn-block open-button" data-parent="#accordion" data-toggle="collapse" data-target="#servicesCollapse" aria-expanded="true" aria-controls="collapseExample">Services</button>
                 <button type="button" class="btn btn-outline-info btn-block open-button" data-parent="#accordion" data-toggle="collapse" data-target="#photosCollapse" aria-expanded="false" aria-controls="collapseExample">Photos</button>
                 <button type="button" class="btn btn-outline-info btn-block open-button" data-parent="#accordion" data-toggle="collapse" data-target="#reviewsCollapse" aria-expanded="false" aria-controls="collapseExample">Reviews</button>
             </div>
@@ -227,6 +227,11 @@
             <!-- PHOTOS GALLERY -->
             <div class="collapse" id="photosCollapse" data-parent="#accordion">
                 <div class="card card-body">
+                    <div class="row">
+                        <div class="alert alert-info d-flex mx-auto btn-block photos-banner" role="alert">
+                            Click on any image to see more
+                        </div>
+                    </div>
                     <div class="row">
                         <!-- <p>Click any image to see more</p> -->
                         <div class="col-md-4 galleryPhoto_1" data-toggle="modal" data-target="#imageModal"></div>

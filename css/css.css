@@ -1,7 +1,9 @@
 
+/* medium screens and up */
 @media (min-width: 768px) { 
     header {
         padding-top: 10px;
+        padding-bottom: 10px;
     }
  }
 /* OWNER PIC */
@@ -20,15 +22,15 @@
 /* Header call to action buttons */
 
 .btn-outline-secondary {
-    color: #F06073;
-    border-color: #F06073;
+    color: #4c4f5f;
+    border-color: #09C;
     border-width: medium;
 }
 
 .btn-outline-secondary:hover {
     color: #fff;
     background-color: #b9656c;
-    border-color: #F06073;
+    border-color: #b9656c;
     border-width: medium;
 }
 .btn-outline-secondary:focus {
@@ -38,7 +40,7 @@
 .btn-outline-secondary:active {
     color: #fff;
     background-color: #b9656c !important;
-    border-color: #F06073 !important;
+    border-color: #b9656c !important;
 }
 .call-to-action-btns {
     margin-top: 0px;
@@ -49,7 +51,7 @@
 
 .btn{
     white-space:normal !important;
-    word-wrap: break-word; 
+    word-wrap: break-word;
 }
 
 /* FOOTER */
@@ -63,6 +65,18 @@ footer {
 /* button group buttons - photos/services/reviews */
 .open-button {
     margin: 0px !important;
+}
+
+button[data-target='#servicesCollapse'] {
+    border-width: 2px 1px 2px 2px;
+}
+
+button[data-target='#photosCollapse'] {
+    border-width: 2px 1px 2px 1px;
+}
+
+button[data-target='#reviewsCollapse'] {
+    border-width: 2px 2px 2px 1px;
 }
 
 .btn-outline-info {
@@ -107,11 +121,16 @@ footer {
 
 /* Gallery photos */
 
+.photos-gallery {
+    width: 200px;
+}
+
 .galleryPhoto_1 {
     background-image: url('../img/photos-page/photo-01.jpeg');
     background-size: cover;
     background-position: center;
     height: 400px;
+    cursor: grab;
 }
 
 .galleryPhoto_2 {
@@ -119,6 +138,7 @@ footer {
     background-size:cover;
     background-position:center;
     height: 400px;
+    cursor: grab;
 }
 
 .galleryPhoto_3 {
@@ -126,6 +146,7 @@ footer {
     background-size:cover;
     background-position:center;
     height: 400px;
+    cursor: grab;
 }
 
 
