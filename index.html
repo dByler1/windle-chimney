@@ -14,11 +14,11 @@
     <div class="container">
         <header>
             <div class="row">
-                <div class="col-md-4 bg-light">
+                <div class="col-md-6 bg-light">
                     <img class="img-fluid mx-auto d-block" id="logo" src="img/UCL-website.png" alt="MainLogo">
                 </div>
 
-                <div class="col-md-4 offset-2 call-to-action-btns">
+                <div class="col-md-4 call-to-action-btns">
                     <button type="button" class="btn btn-outline-secondary btn-md btn-block header-btns" id="headerBtn1" value="Call" onclick="call()">Call </button>
                     <button type="button" class="btn btn-outline-secondary btn-md btn-block header-btns" id="headerBtn2" value="Request Call" data-toggle="modal" data-target="#requestCall">Request a Call </button>
                     <button type="button" class="btn btn-outline-secondary btn-md btn-block header-btns" id="headerBtn3" value="Message" data-toggle="modal" data-target="#message">Message </button>
@@ -27,7 +27,7 @@
                 
             </div>
             <div class="row header-second-row">
-                <div class="col-sm-4 bg-light">
+                <div class="col col-md-6 bg-light">
                         <ul class="list-unstyled">
                             <li class="media">
                                 <div class="media-body">
@@ -38,10 +38,10 @@
                             </li>  
                         </ul>
                 </div>
-                <div class="col-sm-4 offset-2">
-                    <div class="media">
+                <div class="col col-md-4">
+                    <div class="media d-flex justify-content-md-center">
                         <!-- <img class="ml-3 img-fluid" src="img/ic_perm_phone_msg_black_24dp_2x.png" alt="call icon"> -->
-                        <figure class="figure mx-auto d-block">
+                        <figure class="figure">
                             <img src="img/ownerpic.jpg" class="figure-img img-fluid rounded profile-img" alt="Business Owner - Isaac Windle.">
                             <figcaption class="figure-caption">Isaac Windle, Owner</figcaption>
                         </figure>
@@ -52,9 +52,176 @@
 
         <div id="accordion">
             <div class="btn-group btn-group-lg d-flex">
+                    <button type="button" class="btn btn-outline-info btn-block open-button" data-parent="#accordion" data-toggle="collapse" data-target="#servicesCollapse" aria-expanded="true" aria-controls="collapseExample">Services</button>
                 <button type="button" class="btn btn-outline-info btn-block open-button" data-parent="#accordion" data-toggle="collapse" data-target="#photosCollapse" aria-expanded="false" aria-controls="collapseExample">Photos</button>
-                <button type="button" class="btn btn-outline-info btn-block open-button" data-parent="#accordion" data-toggle="collapse" data-target="#servicesCollapse" aria-expanded="true" aria-controls="collapseExample">Services</button>
                 <button type="button" class="btn btn-outline-info btn-block open-button" data-parent="#accordion" data-toggle="collapse" data-target="#reviewsCollapse" aria-expanded="false" aria-controls="collapseExample">Reviews</button>
+            </div>
+
+            <!-- SERVICES ACORDIAN  -->
+            <div class="collapse show" id="servicesCollapse" data-parent="#accordion">
+                <div class="accordion" id="servicesAccordion">
+                        
+                    <!-- FREE ESTIMATES -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                            <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Estimates are Free
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#servicesAccordion">
+                            <div class="card-body">
+                                Please call to schedule an estimate.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- CHIMNEY LINER INSTALLATION  -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Chimney Liner Installation $500-$1700 <i> <img class='float-right' src='img/services_BTN_images/thumbnail_chimney_liner.jpg'/> </i>
+                                </button>
+                            </h5>
+                        </div>
+                        
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#servicesAccordion">
+                            <div class="card-body">
+                                It is recommended that you install a new metal (usually stainless steel) chimney liner in your chimney for one or more of the following reasons: 
+                                <br/>
+                                <br/>
+                                <ul>
+                                    <li>Your appliance(s) are currently exhausting through a clay flue (pipe) system. These masonry flues develop cracks and holes over time. Excessive moisture from high efficiency appliance exhaust drastically accelerates masonry degradation which may lead to holes, blockages, and structural damage. </li>
+                                    <li>Heater flue is lined with old aluminum or other metal pipe that is showing signs of degradation.</li>
+                                    <li>No clay of flue pipe exists in your chimney and so your appliances are venting through an open brick cavity. This is called "open chase" and is common in pre 1920's construction.</li>
+                                </ul>
+                                $500-$1700 price is set by the diameter of pipe needed to vent the total combined BTU input of appliances being vented as well as height/length of the liner. Additional cost may be included with the installations requiring extensive staging for chimney access as well as for chimney liners larger than 5.5" in diameter. 
+                                <br/>
+                                <br/>
+                                * All 316Ti stainless steel chimney liners include a lifetime guarantee.
+                                <br/>
+                                <br/>
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">3 in.</th>
+                                                <th scope="col">4 in.</th>
+                                                <th scope="col">5 in.</th>
+                                                <th scope="col">5.5 in.</th>
+                                                <th scope="col">6 in.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">20 ft or less</th>
+                                                <td>$500</td>
+                                                <td>$600</td>
+                                                <td>$900</td>
+                                                <td>$1300</td>
+                                                <td>$1400</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">21 to 30 ft</th>
+                                                    <td>$600</td>
+                                                    <td>$700</td>
+                                                    <td>$1200</td>
+                                                    <td>$1450</td>
+                                                    <td>$1600</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">31 to 40 ft</th>
+                                                    <td>$700</td>
+                                                    <td>$800</td>
+                                                    <td>$1400</td>
+                                                    <td>$1550</td>
+                                                    <td>$1700</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    These prices include replacement of damaged/corroded galvanized connector piping for appliances. More material costs may be applied if excessive connector piping needs replacement. 
+                                    <br/>
+                                    <br/>
+                                    Insulation is required for solid fueld burning appliances and open chase chimneys. More material costs will be applied if insulation is required.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CHIMNEY CERTIFICATIONS -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Chimney Certifications
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#servicesAccordion">
+                        <div class="card-body">
+                            Please call for inquiry
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- CHIMNEY CLEANING -->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Cleaning $130 - $250
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#servicesAccordion">
+                        <div class="card-body">
+                            Cleaning includes a dry clean (sweep) to remove all loose creosote and soot in chimney flue system and fireplace system. 
+                            <ul>
+                                <li>Prefabricated Fireplace $130 </li>
+                                <li>Masonry Fireplace $150</li>
+                                <li>Wood Stove $150</li>
+                                <li>Oil Burning Flue System $250</li>
+                            </ul>   
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- CHIMNEY CAPS -->
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                            <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Chimney Caps $130 - $200
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#servicesAccordion">
+                            <div class="card-body">
+                                Price is determined by the size and does not include caps over 13" x 13". Includes installation.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CHIMNEY LINER FOR WOOD BURNING FIREPLACE -->
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                            <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Chimney Liner for Wood Burning Fireplace $3500 - $6500
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#servicesAccordion">
+                            <div class="card-body">
+                                New chimney liners installed for wood burning fireplaces include a lifetime guarantee. These liners must be sized properly and insulated completely. A new chimney liner for a fireplace does not guarantee that your fireplace will draft properly. Please call with inquiries.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           
             <!-- PHOTOS GALLERY -->
@@ -86,155 +253,6 @@
                         <div class="col-md-4 galleryPhoto_23"></div>
                     </div>
                 </div>
-            </div>
-            <!-- SERVICES ACORDIAN  -->
-            <div class="collapse show" id="servicesCollapse" data-parent="#accordion">
-                    <div class="accordion" id="servicesAccordion">
-                            
-                        <!-- CHIMNEY LINER INSTALLATION  -->
-                        <div class="card">
-                              <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                  <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Chimney Liner Installation $500-$1700 <i> <img class='float-right' src='img/services_BTN_images/thumbnail_chimney_liner.jpg'/> </i>
-                                  </button>
-                                </h5>
-                              </div>
-                          
-                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#servicesAccordion">
-                                <div class="card-body">
-                                    It is recommended that you install a new metal (usually stainless steel) chimney liner in your chimney for one or more of the following reasons: 
-                                    <br/>
-                                    <br/>
-                                    <ul>
-                                        <li>Your appliance(s) are currently exhausting through a clay flue (pipe) system. These masonry flues develop cracks and holes over time. Excessive moisture from high efficiency appliance exhaust drastically accelerates masonry degradation which may lead to holes, blockages, and structural damage. </li>
-                                        <li>Heater flue is lined with old aluminum or other metal pipe that is showing signs of degradation.</li>
-                                        <li>No clay of flue pipe exists in your chimney and so your appliances are venting through an open brick cavity. This is called "open chase" and is common in pre 1920's construction.</li>
-                                    </ul>
-                                    $500-$1700 price is set by the diameter of pipe needed to vent the total combined BTU input of appliances being vented as well as height/length of the liner. Additional cost may be included with the installations requiring extensive staging for chimney access as well as for chimney liners larger than 5.5" in diameter. 
-                                    <br/>
-                                    <br/>
-                                    * All 316Ti stainless steel chimney liners include a lifetime guarantee.
-                                    <br/>
-                                    <br/>
-                                    <div class="table-responsive">
-                                        <table class="table table-sm table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"></th>
-                                                    <th scope="col">3 in.</th>
-                                                    <th scope="col">4 in.</th>
-                                                    <th scope="col">5 in.</th>
-                                                    <th scope="col">5.5 in.</th>
-                                                    <th scope="col">6 in.</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">20 ft or less</th>
-                                                    <td>$500</td>
-                                                    <td>$600</td>
-                                                    <td>$900</td>
-                                                    <td>$1300</td>
-                                                    <td>$1400</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">21 to 30 ft</th>
-                                                        <td>$600</td>
-                                                        <td>$700</td>
-                                                        <td>$1200</td>
-                                                        <td>$1450</td>
-                                                        <td>$1600</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">31 to 40 ft</th>
-                                                        <td>$700</td>
-                                                        <td>$800</td>
-                                                        <td>$1400</td>
-                                                        <td>$1550</td>
-                                                        <td>$1700</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        These prices include replacement of damaged/corroded galvanized connector piping for appliances. More material costs may be applied if excessive connector piping needs replacement. 
-                                        <br/>
-                                        <br/>
-                                        Insulation is required for solid fueld burning appliances and open chase chimneys. More material costs will be applied if insulation is required.
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <!-- CHIMNEY CERTIFICATIONS -->
-                            <div class="card">
-                              <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                  <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Chimney Certifications
-                                  </button>
-                                </h5>
-                              </div>
-                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#servicesAccordion">
-                                <div class="card-body">
-                                    Please call for inquiry
-                                </div>
-                              </div>
-                            </div>
-
-                            <!-- CHIMNEY CLEANING -->
-                            <div class="card">
-                              <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                  <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Cleaning $130 - $250
-                                  </button>
-                                </h5>
-                              </div>
-                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#servicesAccordion">
-                                <div class="card-body">
-                                    Cleaning includes a dry clean (sweep) to remove all loose creosote and soot i a chimney flue system and fireplace system. 
-                                    <ul>
-                                        <li>Prefabricated Fireplace $130 </li>
-                                        <li>Masonry Fireplace $150</li>
-                                        <li>Wood Stove $150</li>
-                                        <li>Oil Burning Flue System $250</li>
-                                    </ul>   
-                                </div>
-                              </div>
-                            </div>
-
-                            <!-- CHIMNEY CAPS -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h5 class="mb-0">
-                                    <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Chimney Caps $130 - $200
-                                    </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#servicesAccordion">
-                                    <div class="card-body">
-                                        Price is determined by the size and does not include caps over 13" x 13". Includes installation.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- CHIMNEY LINER FOR WOOD BURNING FIREPLACE -->
-                            <div class="card">
-                                <div class="card-header" id="headingFive">
-                                    <h5 class="mb-0">
-                                    <button class="btn collapsed btn-outline-primary btn-large btn-block" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        Chimney Liner for Wood Burning Fireplace $3500 - $6500
-                                    </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#servicesAccordion">
-                                    <div class="card-body">
-                                        New chimney liners installed for wood burning fireplaces include a lifetime guarantee. These liners must be sized properly and insulated completely. A new chimney liner for a fireplace does not guarantee that your fireplace will draft properly. Please call with inquiries.
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
             </div>
 
             <!-- REVIEWS -->
