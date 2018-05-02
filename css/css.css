@@ -13,6 +13,9 @@
     .header-second-row {
         margin-right: 10px;
     }
+    header {
+        margin-top: 10px;
+    }
   }
 /* OWNER PIC */
 .profile-img{
