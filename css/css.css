@@ -1,4 +1,8 @@
-
+@media (min-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
 /* medium screens and up */
 @media (min-width: 768px) { 
     header {
