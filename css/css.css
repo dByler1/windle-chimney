@@ -1,3 +1,5 @@
+
+/*decrease desktop width */
 @media (min-width: 1200px) {
     .container {
         max-width: 900px;
@@ -57,24 +59,20 @@
 
 /* fix button text overflow */
 
-.btn{
+/* .btn{
     white-space:normal !important;
     word-wrap: break-word;
+} */
+
+/* Services cards background and borders */
+#servicesAccordion > .card {
+    border: 0px !important;
 }
 
-/* reviews Carousel */
-.carousel-content {
-    color:black;
-    display:flex;
-    align-items:center;
+#servicesAccordion > .card > .card-header {
+    border-bottom: 0px !important;
+    background-color: #fff !important;
 }
-
-#text-carousel {
-  width: 100%;
-  height: auto;
-  padding: 50px;
-}
-
 
 /* FOOTER */
 
