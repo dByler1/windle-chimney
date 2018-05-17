@@ -1,67 +1,17 @@
 
 
-
-
-
-
-// Write messges to firebase database 
-  
-  // Initialize Firebase
-  var config = {
-      apiKey: "AIzaSyAN9Hk3Rp2x5p1nh8-8GbXz4aXPPdUt4VY",
-      authDomain: "uclmessages-b4aaa.firebaseapp.com",
-      databaseURL: "https://uclmessages-b4aaa.firebaseio.com",
-      projectId: "uclmessages-b4aaa",
-      storageBucket: "uclmessages-b4aaa.appspot.com",
-      messagingSenderId: "17157242884"
-  };
-
-  firebase.initializeApp(config);
-  
-  var messagesRef = firebase.database().ref('messages');
-
-  //Process contact message submission
-  
-  document.getElementById('message').addEventListener('submit', SubmitForm)
-  
-  function SubmitForm(e){
-      e.preventDefault();
-      
-      var name = getInputVal('name');
-      var phone = getInputVal('phone');
-      var message = getInputVal('message');
-      
-      saveMessage(name, phone, message);
-      //alert('messges submitted to firebase');
-  }
-  
-  // Function to get form values
-  function getInputVal(id){
-      return document.getElementById(id).value;
-  }
-  
-  // Save message to firebase
-  function saveMessage(name, phone, message){
-      var newMessageRef = messagesRef.push();
-      newMessageRef.set({
-          name: name,
-          phone: phone,
-          message: message
-      })
-  }
-
   //RQUEST A CALL
 
 //Process contact message submission
 
 document.getElementById('requestCall').addEventListener('submit', SubmitForm)
 
-function SubmitForm(e){
-    e.preventDefault();
+// function SubmitForm(e){
+//     e.preventDefault();
     
-    var phone = getInputVal('phone');
+//     var phone = getInputVal('phone');
     
-    saveMessage(phone);
+//     saveMessage(phone);
     //alert('messges submitted to firebase');
 }
 
@@ -97,3 +47,7 @@ function saveMessage(phone){
       );
     }
   };
+
+  $( "#requestCallSubmit" ).click(function() {
+    https://formspree.io/uclpaoli@gmail.com
+  });
