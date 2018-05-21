@@ -2,31 +2,7 @@
 
   //RQUEST A CALL
 
-//Process contact message submission
-
-document.getElementById('requestCall').addEventListener('submit', SubmitForm)
-
-// function SubmitForm(e){
-//     e.preventDefault();
-    
-//     var phone = getInputVal('phone');
-    
-//     saveMessage(phone);
-    //alert('messges submitted to firebase');
-}
-
 // Function to get form values
-function getInputVal(id){
-    return document.getElementById(id).value;
-}
-
-// Save message to firebase
-function saveMessage(phone){
-    var newMessageRef = messagesRef.push();
-    newMessageRef.set({
-        phone: phone
-    })
-}
 
 //CALL FUNCTIONALITY
   //Function to check whether mobile or desktop
@@ -47,7 +23,3 @@ function saveMessage(phone){
       );
     }
   };
-
-  $( "#requestCallSubmit" ).click(function() {
-    https://formspree.io/uclpaoli@gmail.com
-  });

@@ -154,7 +154,7 @@ button[data-target='#reviewsCollapse'] {
 }
 
 .galleryPhoto_2 {
-    background-image: url('../img/photos-page/photo-02.jpeg');
+    background-image: url('../img/photos-page/kneeling_Fireplace_brush.jpg');
     background-size:cover;
     background-position:center;
     height: 400px;
@@ -162,12 +162,36 @@ button[data-target='#reviewsCollapse'] {
 }
 
 .galleryPhoto_3 {
-    background-image: url('../img/photos-page/photo-01.jpeg');
+    background-image: url('../img/photos-page/kneeling_Fireplace.jpg');
+    background-size:cover;
+    background-position:center;
+    height: 400px; 
+    cursor: grab;
+}
+
+
+
+.galleryPhoto_4 {
+    background-image: url('../img/photos-page/roof_chimney.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    cursor: grab;
+}
+
+.galleryPhoto_5 {
+    background-image: url('../img/photos-page/steelPiping.jpg');
     background-size:cover;
     background-position:center;
     height: 400px;
     cursor: grab;
 }
 
-
+.galleryPhoto_6 {
+    background-image: url('../img/photos-page/stuffingPipe_roof.jpg');
+    background-size:cover;
+    background-position:center;
+    height: 400px; 
+    cursor: grab;
+}
 
