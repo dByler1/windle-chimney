@@ -1,0 +1,22 @@
+{
+  "name": "windle-chimney",
+  "version": "1.0.0",
+  "description": "windle chimmney company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dByler1/windle-chimney.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dByler1/windle-chimney/issues"
+  },
+  "homepage": "https://github.com/dByler1/windle-chimney#readme",
+  "dependencies": {
+    "create-react-app": "^1.5.2"
+  }
+}
