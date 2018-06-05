@@ -11,8 +11,9 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .page-header {
-        padding: 20px 0px 30px 0;
+   
+    .header-second-row {
+        margin-top: 30px;
     }
  }
 
@@ -23,15 +24,13 @@
         padding-top: 10px;
         margin-top: 0px !important;
     }
-    header {
-        padding-top: 10px;
+  
+    .jumbotron h1 {
+        font-size: 1.5rem;
     }
-    .page-header h1 {
-        font-size: 1.8rem;
-    }
-    .page-header {
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
+
+    .header-second-row div ul {
+        padding-top: 0px;
     }
   }
 
@@ -39,30 +38,52 @@
     padding-top: 10px;
 }
 
-/* PAGE HEADER TEXT */
-.page-header {
-    text-align: center;
+/* BODY BACKGROUND COLOR */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* ALL TEXT WEIGHT  */
+p, .btn, h1, figcaption, h5 {
+    font-weight: 600;
+}
+
+/* SET PAGE MARGIN AND PADDING */
+.container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.row {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* PAGE HEADER BANNER */
+
+.jumbotron h1 {
+    color: #5f554c;
 }
 
 /* Header call to action buttons */
 
-.btn-outline-secondary {
-    color: #4c4f5f;
-    border-color: #09C;
-    border-width: medium;
+.btn-secondary {
+    background-color: #495079;
+    color: #fff;
+    /* border-color: #09C;
+    border-width: medium; */
 }
 
-.btn-outline-secondary:hover {
+.btn-secondary:hover {
     color: #fff;
     background-color: #b9656c;
     border-color: #b9656c;
     border-width: medium;
 }
-.btn-outline-secondary:focus {
+.btn-secondary:focus {
     outline: 0 !important;
 }
 
-.btn-outline-secondary:active {
+.btn-secondary:active {
     color: #fff;
     background-color: #b9656c !important;
     border-color: #b9656c !important;
@@ -74,10 +95,10 @@
 
 /* fix button text overflow */
 
-/* .btn{
+.btn{
     white-space:normal !important;
     word-wrap: break-word;
-} */
+}
 
 /* Services cards background and borders */
 #servicesAccordion > .card {
@@ -114,9 +135,10 @@ button[data-target='#reviewsCollapse'] {
     border-width: 2px 2px 2px 1px;
 }
 
-.btn-outline-info {
+.btn-info {
     color: #4c4f5f;
-    border-color: #b9656c;
+    border-color: #496779;
+    background-color: transparent;
 }
 
 .btn-outline-info:hover {
@@ -166,6 +188,7 @@ button[data-target='#reviewsCollapse'] {
     background-position: center;
     height: 400px;
     cursor: grab;
+    background-image: cover;
 }
 
 .galleryPhoto_2 {
