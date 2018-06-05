@@ -8,8 +8,10 @@
 /* medium screens and up */
 @media (min-width: 768px) { 
     header {
-        padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .jumbotron {
+        padding: 2rem 2rem;
     }
    
     .header-second-row {
@@ -112,10 +114,22 @@ p, .btn, h1, figcaption, h5 {
 
 /* FOOTER */
 
-footer {
-    height: 50px;
-    color: white;
-}
+html, body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+  .footer {
+    flex-shrink: 0;
+    text-align: center;
+    background-color: #e9ecef;
+    padding-top: 10px;
+  }
 
 
 /* button group buttons - photos/services/reviews */
@@ -188,7 +202,6 @@ button[data-target='#reviewsCollapse'] {
     background-position: center;
     height: 400px;
     cursor: grab;
-    background-image: cover;
 }
 
 .galleryPhoto_2 {
