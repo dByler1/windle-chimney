@@ -192,57 +192,19 @@ button[data-target='#reviewsCollapse'] {
 
 /* Gallery photos */
 
-.photos-gallery {
-    width: 200px;
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
-.galleryPhoto_1 {
-    background-image: url('../img/Drawing-Stainless-Steel-Lining-page-001.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    cursor: grab;
-}
-
-.galleryPhoto_2 {
-    background-image: url('../img/photos-page/kneeling_Fireplace_brush.jpeg');
-    background-size:cover;
-    background-position:center;
-    height: 400px;
-    cursor: grab;
-}
-
-.galleryPhoto_3 {
-    background-image: url('../img/photos-page/kneeling_Fireplace.jpeg');
-    background-size:cover;
-    background-position:center;
-    height: 400px; 
-    cursor: grab;
-}
-
-
-
-.galleryPhoto_4 {
-    background-image: url('../img/photos-page/roof_chimney.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    cursor: grab;
-}
-
-.galleryPhoto_5 {
-    background-image: url('../img/photos-page/steelPiping.jpeg');
-    background-size:cover;
-    background-position:center;
-    height: 400px;
-    cursor: grab;
-}
-
-.galleryPhoto_6 {
-    background-image: url('../img/photos-page/stuffingPipe_roof.jpeg');
-    background-size:cover;
-    background-position:center;
-    height: 400px; 
-    cursor: grab;
-}
+ section .media { 
+    min-width: 0;
+    margin: 5px;
+ }
+ section img {
+    width: 320px;
+    max-width: 100%; 
+    height: 350px;
+    transition: 0.5s all ease; 
+  }
 

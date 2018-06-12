@@ -38,5 +38,4 @@
         this.setAttribute("data-toggle", "")
       }
     })
-
   })
