@@ -2,8 +2,8 @@
 /*decrease desktop width */
 @media (min-width: 1200px) {
     .container {
-        max-width: 960px;
-    }
+        max-width: 1080px;
+    } 
   
 }
 
@@ -43,7 +43,7 @@ body {
   
 
 .background-image {
-    background-image: url("../img/house-lowOpacity.png");
+    background-image: url("../img/house.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -74,18 +74,12 @@ body {
 /* Business info */
 
 
-
-
 .list-unstyled {
     background-color: #fff;
     opacity: 0.9;
     padding: 5px;
 }
-/* 
-.media-body {
-    display: flex;
-    flex-direction: row;
-} */
+
 
 /* ALL TEXT WEIGHT  */
 p, .btn, h1, figcaption, h5 {
@@ -97,7 +91,10 @@ p, .btn, h1, figcaption, h5 {
     border-radius: .25rem;
 }
 
-/* PAGE HEADER BANNER */
+/* =========================  HEADER BANNER  ==================================== */
+.dark-bg {
+    background-color: #4c4f5f;
+}
 .jumbotron {
     background-color: #4c4f5f;
     display: flex;
@@ -126,10 +123,14 @@ p, .btn, h1, figcaption, h5 {
     transition: 0.5s all ease; 
   }
 
-/* .jumbotron img {
-    max-width: 100px;
-    max-height: 100%;
-} */
+  /* ======================================  TRANSPARENT CONTENT BACKGROUND  =========================================== */
+
+  .light-transparent-bg {
+    background: #e9ecef;
+    background: rgba(233, 236, 239, 0.73);
+    padding: 15px 0px 35px 0px;
+}
+
 
 /* Header call to action buttons */
 
@@ -166,21 +167,16 @@ p, .btn, h1, figcaption, h5 {
 
 
 /* Services cards background and borders */
-.acordian-background {
-    background: #4c4f5f;
-    padding: 15px 0px 35px 0px;
-}
+
 
 #servicesAccordion > .card {
     border: 0px !important;
-    background-color: transparent;
 
 }
 
 
 #servicesAccordion > .card > .card-header {
     border-bottom: 0px !important;
-    background-color: #4c4f5f;
 }
 
 /* THE TRHEE ACCORDION BUTTONS  */
@@ -191,6 +187,9 @@ p, .btn, h1, figcaption, h5 {
 #accordion .open-button:focus {
     background-color: #b9656c;
     color: #fff;
+    /*the line below changes the default btn click highlight state*/
+    /* outline: 5px auto royalblue !important; */
+
 }
 
 
@@ -207,7 +206,7 @@ p, .btn, h1, figcaption, h5 {
 }
 
 button[data-target='#servicesCollapse'] {
-    border-width: 0px 1px 0px 1px;
+    border-width: 0px 1px 0px 0px;
 }
 
 button[data-target='#photosCollapse'] {
@@ -215,13 +214,13 @@ button[data-target='#photosCollapse'] {
 }
 
 button[data-target='#reviewsCollapse'] {
-    border-width: 0px 1px 0px 0px;
+    border-width: 0px 0px 0px 0px;
 }
 
 .btn-info {
-    color: #4c4f5f;
+    color: #fff;
     border-color: #4c4f5f;
-    background-color: #fff;
+    background-color: #4c4f5f;
 }
 
 
@@ -276,7 +275,7 @@ section {
     bottom: 0;
     position: fixed;
     margin: 1em;
-    right: 2px;
+    right: 20px;
   }
   
   .float-btn {

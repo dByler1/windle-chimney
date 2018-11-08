@@ -24,6 +24,8 @@
     }
   };
 
+  //tel href="tel:###-###-####" replaces the javascripts 
+
   $(document).ready(function() {
     $(".open-button").on("click", function() {
       //get the data target value of the button that was clicked which is the same as the accordian content IDs
