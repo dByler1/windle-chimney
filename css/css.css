@@ -47,7 +47,7 @@ body {
 html, body {
     overflow-x: hidden;
   }
-  
+
 .background-image {
     background-image: url("../img/beautiful-house-high-definition-wallpapers-cool-desktop-images-widescreen-copy.jpg");
     background-size: cover;
@@ -288,6 +288,7 @@ section {
     position: fixed;
     margin: 1em;
     right: 20px;
+    z-index: 4;
   }
   
   .float-btn {

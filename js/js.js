@@ -26,34 +26,39 @@
 
   //tel href="tel:###-###-####" replaces the javascripts 
 
-  // $(document).ready(function() {
-  //   $(".open-button").on("click", function() {
-  //     //get the data target value of the button that was clicked which is the same as the accordian content IDs
-  //     var x = this.getAttribute("data-target");
-  //     //if the clicked button's associated accordian doesn't have the show class
-  //     if (!$(x).hasClass("show")) {
-  //       //give the clicked button a data-toggle of collapse so it will open
-  //       this.setAttribute("data-toggle", "collapse")
-  //     }
-  //     //if the clicked button's associated accordian does have the show class, set the data toggle to blank so it won't change
-  //     if ($(x).hasClass("show")) {
-  //       this.setAttribute("data-toggle", "")
-  //     }
-  //   })
-  // })
-
   $(document).ready(function() {
-
-    $('#servicesCollapse').collapse('show');
-
-    $('.services').on('click', function(e){
-      $('#servicesCollapse').collapse('toggle');
+    $(".open-button").on("click", function(e) {
+      console.log(e)
+      //get the data target value of the button that was clicked which is the same as the accordian content IDs
+      var x = this.getAttribute("data-target");
+      //if the clicked button's associated card doesn't have the show class
+      if (!$(x).hasClass("show")) {
+        //give the clicked button a data-toggle of collapse so it will open
+        this.setAttribute("data-toggle", "collapse")
+      }
+      //if the clicked button's associated card does have the show class, set the data toggle to blank so it won't change
+      if ($(x).hasClass("show")) {
+        this.setAttribute("data-toggle", "")
+      }
     })
-    $('.photos').on('click', function(e){
-      $('#photosCollapse').collapse('toggle');
-    })
-    $('.reviews').on('click', function(e){
-      $('#reviewsCollapse').collapse('toggle');
-    })
-    
   })
+
+  // $(document).ready(function() {
+
+  //   $('#servicesCollapse').collapse({
+  //     toggle: true
+  //   });
+
+  //   $('.services').on('click', function(e){
+  //     $('#servicesCollapse').collapse('toggle');
+  //   })
+
+  //   $('.photos').on('click', function(e){
+  //     $('#photosCollapse').collapse('toggle');
+  //   })
+    
+  //   $('.reviews').on('click', function(e){
+  //     $('#reviewsCollapse').collapse('toggle');
+  //   })
+    
+  // })
