@@ -51,8 +51,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    
-
 }
 
 /* ALL TEXT WEIGHT  */
@@ -117,7 +115,7 @@ p, .btn, h1, figcaption, h5 {
 
   .light-transparent-bg {
     background: #e9ecef;
-    background: rgba(233, 236, 239, 0.73);
+    background: rgba(233, 236, 239, 0.63);
 }
 
 /* ============================================  Seasonal Promo Banner  ============================================  */
