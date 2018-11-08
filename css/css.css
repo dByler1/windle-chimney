@@ -44,7 +44,10 @@ body {
     background: #f8f9fa;
 }
   
-
+html, body {
+    overflow-x: hidden;
+  }
+  
 .background-image {
     background-image: url("../img/beautiful-house-high-definition-wallpapers-cool-desktop-images-widescreen-copy.jpg");
     background-size: cover;
