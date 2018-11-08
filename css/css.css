@@ -1,6 +1,7 @@
 
-/*decrease desktop width */
+/* Large screens and up */
 @media (min-width: 1200px) {
+    /*decrease desktop width */
     .container {
         max-width: 1080px;
     } 
@@ -37,19 +38,34 @@
 
   }
 
+  /* ============================================ Global Settings  ============================================  */
+
 body {
     background: #f8f9fa;
 }
   
 
 .background-image {
-    background-image: url("../img/house.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../img/beautiful-house-high-definition-wallpapers-cool-desktop-images-widescreen-copy.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
 
 }
 
-/* SET PAGE MARGIN AND PADDING */
+/* ALL TEXT WEIGHT  */
+p, .btn, h1, figcaption, h5 {
+    font-weight: 600;
+}
+
+/* ROUND CORENERS */ 
+.card, .btn-group, .list-unstyled {
+    border-radius: .25rem;
+}
+
+/* ============================================  SET PAGE MARGIN AND PADDING  ============================================  */
 .container {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -64,34 +80,8 @@ body {
     padding-top: 1rem;
 }
 
-/* Satisfaction image */
-#sat {
-    max-height: 75px;
-    max-width: 100%;
-    float: left;
-}
+/*============================================   HEADER BANNER ============================================  */
 
-/* Business info */
-
-
-.list-unstyled {
-    background-color: #fff;
-    opacity: 0.9;
-    padding: 5px;
-}
-
-
-/* ALL TEXT WEIGHT  */
-p, .btn, h1, figcaption, h5 {
-    font-weight: 600;
-}
-
-/* ROUND CORENERS */ 
-.card, .btn-group, .list-unstyled {
-    border-radius: .25rem;
-}
-
-/* =========================  HEADER BANNER  ==================================== */
 .dark-bg {
     background-color: #4c4f5f;
 }
@@ -128,11 +118,33 @@ p, .btn, h1, figcaption, h5 {
   .light-transparent-bg {
     background: #e9ecef;
     background: rgba(233, 236, 239, 0.73);
-    padding: 15px 0px 35px 0px;
+}
+
+/* ============================================  Seasonal Promo Banner  ============================================  */
+
+.seasonal-promo-banner {
+    height: 100px;
+    background: #e9ecef;
+    border: 2px solid black;
+}
+
+/* ============================================  Business info box ============================================  */
+
+/* Satisfaction image */
+#sat {
+    max-height: 75px;
+    max-width: 100%;
+    float: left;
+}  
+
+.list-unstyled {
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 5px;
 }
 
 
-/* Header call to action buttons */
+/* ============================================  Header call to action buttons ============================================  */
 
 .btn-secondary {
     background-color: #b9656c;
@@ -159,14 +171,14 @@ p, .btn, h1, figcaption, h5 {
     margin-bottom: 5px;
 }
 
-/* Profile pic  */
+/* ============================================   Profile pic  ============================================ */
 
 .figure-img {
     border: 4px solid #fff;
 }
 
 
-/* Services cards background and borders */
+/* ============================================  Services cards background and borders  ============================================  */
 
 
 #servicesAccordion > .card {
@@ -179,7 +191,7 @@ p, .btn, h1, figcaption, h5 {
     border-bottom: 0px !important;
 }
 
-/* THE TRHEE ACCORDION BUTTONS  */
+/* ============================================  THE TRHEE ACCORDION BUTTONS ============================================   */
 #accordion .open-button:hover {
     background-color: #b9656c;
 }
@@ -191,7 +203,6 @@ p, .btn, h1, figcaption, h5 {
     /* outline: 5px auto royalblue !important; */
 
 }
-
 
 /* fix button text overflow */
 
@@ -224,7 +235,7 @@ button[data-target='#reviewsCollapse'] {
 }
 
 
-/* Services buttons */
+/* ============================================ Services buttons  ============================================  */ 
 
 .btn-outline-primary {
     color: #4c4f5f;
@@ -251,7 +262,7 @@ button[data-target='#reviewsCollapse'] {
 
 
 
-/* Gallery photos */
+/* ============================================   Gallery photos  ============================================  */
 
 section {
     display: flex;
@@ -269,7 +280,7 @@ section {
     transition: 0.5s all ease; 
   }
 
-/* FLOATING ACTION BUTTON */
+/* ==================================== FLOATING ACTION BUTTON  =================================================== */
 
 .nav-float {
     bottom: 0;
@@ -301,11 +312,12 @@ section {
   
   .float-btn:nth-last-child(1) {
     background-color: #fff;
-    background-image: url('../img/baseline-call-24px (4).svg');
+    background-image: url('../img/baseline-call-24px\ \(4\).svg');
     background-size: contain;
+    padding: 5px;
   }
 
-  /* FOOTER */
+ /* ======================================   FOOTER    ===========================================================*/
 
 html, body {
     height: 100%;
