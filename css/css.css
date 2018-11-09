@@ -5,7 +5,6 @@
     .container {
         max-width: 1080px;
     } 
-  
 }
 
 /* medium screens and up */
@@ -21,8 +20,7 @@
  @media (max-width: 767.98px) { 
     .header-second-row {
         padding-top: 10px;
-        margin-top: 0px !important;
-        
+        margin-top: 0px !important;   
     }
  
     .jumbotron h1 {
@@ -36,7 +34,6 @@
         width: 4rem !important; 
         height: 6rem !important;
       } 
-
   }
 
   /* ============================================ Global Settings  ============================================  */
@@ -44,19 +41,12 @@
 body {
     background: #f8f9fa;
 }
-  
+
+/* fix for 15px of right padding on mobile problem - the rows were putting weird padding and negative padding */
 html, body {
     overflow-x: hidden;
-  }
-
-/* .background-image {
-    background-image: url("../img/beautiful-house-high-definition-wallpapers-cool-desktop-images-widescreen-copy.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-} */
-
+}
+/* background image fixed, no scroll - background attachment fixed is not supported in mobile browsers */
 body:before {
     content: "";
     display: block;
@@ -84,14 +74,6 @@ p, .btn, h1, figcaption, h5 {
 }
 
 /* ============================================  SET PAGE MARGIN AND PADDING  ============================================  */
-.container {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-}
-.row {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
 /* top row padding */
 .header-first-row {
@@ -117,7 +99,6 @@ p, .btn, h1, figcaption, h5 {
 .jumbotron h1 {
     color: #fff;
     margin-bottom: 0px;
-
 }
 
 .jumbotron .jumbo-media { 
@@ -142,8 +123,8 @@ p, .btn, h1, figcaption, h5 {
 
 .seasonal-promo-banner {
     height: 100px;
-    background: #e9ecef;
-    border: 2px solid black;
+    background: #495079;
+    color: #fff;
 }
 
 /* ============================================  Business info box ============================================  */
