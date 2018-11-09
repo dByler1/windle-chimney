@@ -88,7 +88,6 @@ p, .btn, h1, figcaption, h5 {
 .jumbotron {
     background-color: #4c4f5f;
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
     margin-bottom: 0;
     padding: .4rem .4rem;
@@ -115,7 +114,6 @@ p, .btn, h1, figcaption, h5 {
   /* ======================================  TRANSPARENT CONTENT BACKGROUND  =========================================== */
 
   .light-transparent-bg {
-    background: #e9ecef;
     background: rgba(233, 236, 239, 0.63);
 }
 
@@ -123,8 +121,8 @@ p, .btn, h1, figcaption, h5 {
 
 .seasonal-promo-banner {
     height: 100px;
-    background: #495079;
-    color: #fff;
+    background: #E9ECEF;
+    color: #4B4B4B;
 }
 
 /* ============================================  Business info box ============================================  */
