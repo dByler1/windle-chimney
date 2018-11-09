@@ -52,7 +52,7 @@ html, body {
     background-image: url("../img/beautiful-house-high-definition-wallpapers-cool-desktop-images-widescreen-copy.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* background-position: center; */
 }
 
