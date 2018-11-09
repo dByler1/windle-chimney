@@ -22,6 +22,7 @@
     .header-second-row {
         padding-top: 10px;
         margin-top: 0px !important;
+        background-attachment: initial;
     }
   
     .jumbotron h1 {
@@ -52,8 +53,8 @@ html, body {
     background-image: url("../img/beautiful-house-high-definition-wallpapers-cool-desktop-images-widescreen-copy.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    /* background-position: center; */
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /* ALL TEXT WEIGHT  */
