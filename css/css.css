@@ -123,6 +123,7 @@ p, .btn, h1, figcaption, h5 {
     height: 100px;
     background: #E9ECEF;
     color: #4B4B4B;
+    border-bottom: 3px solid #4c4f5f;
 }
 
 /* ============================================  Business info box ============================================  */
