@@ -18,13 +18,12 @@
  /* medium sreccnes and down  */
 
  @media (max-width: 767.98px) { 
+    .light-transparent-bg {
+        background: rgba(233, 236, 239, 0.53) !important;
+    }
     .header-second-row {
         padding-top: 10px;
         margin-top: 0px !important;   
-    }
-
-    .light-transparent-bg {
-        background: rgba(233, 236, 239, 0.43);
     }
  
     .jumbotron h1 {
@@ -124,11 +123,18 @@ p, .btn, h1, figcaption, h5 {
 /* ============================================  Seasonal Promo Banner  ============================================  */
 
 .seasonal-promo-banner {
-    margin-top: 10px;
     height: 100px;
     background: #E9ECEF;
-    color: #4B4B4B;
-    border: 4px solid #b9656c;
+    color: #fff;
+    background: url('../img/pete-willis-1081652-unsplash.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.seasonal-promo-banner h4 {
+    background: rgba(73, 80, 121, .9);
+    padding: 15px;
 }
 
 /* ============================================  Business info box ============================================  */
