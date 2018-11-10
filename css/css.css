@@ -21,6 +21,10 @@
     .light-transparent-bg {
         background: rgba(233, 236, 239, 0.53) !important;
     }
+    .seasonal-promo-banner h4 {
+        font-size: 1rem;
+        padding: 5px;
+    }
     .header-second-row {
         padding-top: 10px;
         margin-top: 0px !important;   
@@ -125,7 +129,6 @@ p, .btn, h1, figcaption, h5 {
 .seasonal-promo-banner {
     height: 100px;
     background: #E9ECEF;
-    color: #fff;
     background: url('../img/pete-willis-1081652-unsplash.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -133,8 +136,9 @@ p, .btn, h1, figcaption, h5 {
     background-size: cover;
 }
 .seasonal-promo-banner h4 {
-    background: rgba(73, 80, 121, .9);
+    background: rgba(233, 236, 239, 0.93);
     padding: 15px;
+    color: #4B4B4B;
 }
 
 /* ============================================  Business info box ============================================  */
