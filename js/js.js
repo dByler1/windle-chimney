@@ -43,22 +43,3 @@
     })
   })
 
-  // $(document).ready(function() {
-
-  //   $('#servicesCollapse').collapse({
-  //     toggle: true
-  //   });
-
-  //   $('.services').on('click', function(e){
-  //     $('#servicesCollapse').collapse('toggle');
-  //   })
-
-  //   $('.photos').on('click', function(e){
-  //     $('#photosCollapse').collapse('toggle');
-  //   })
-    
-  //   $('.reviews').on('click', function(e){
-  //     $('#reviewsCollapse').collapse('toggle');
-  //   })
-    
-  // })
