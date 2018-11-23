@@ -291,6 +291,11 @@ button[data-target='#reviewsCollapse'] {
     background: #fff;
 }
 
+#backBTN {
+    text-align: left;
+    font-size: 1.3rem;
+}
+
 
 
 /* ============================================   Gallery photos  ============================================  */
