@@ -71,6 +71,7 @@ function mobileShowServiceInfo(node) {
 
     //hide the service buttons column on mobile but leave it visible on larger screens
     //node.parent().toggleClass('d-flex d-md-flex')
+    console.log(node.parent())
     node.parent().removeClass('d-flex')
     node.parent().addClass('d-none d-md-flex')
     console.log('under the node.parent')
