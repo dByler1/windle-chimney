@@ -24,15 +24,18 @@ $(".servicesBTN").on("click", function (e) {
     //if the clicked button's associated card does have the show class, set the data toggle to blank so it won't change
     if ($(dataTarget).hasClass("show") && servicesDisplayValue === 'block') {
         this.setAttribute("data-toggle", "")
+        console.log('first block - already open - display block')
     } else if ($(dataTarget).hasClass("show") && servicesDisplayValue === 'none') {
         this.setAttribute("data-toggle", "")
         mobileShowServiceInfo($(this))
+        console.log('second block - already open - display none - mobile assumption')
     }
     else {
         //give the clicked button a data-toggle of collapse so it will open
         this.setAttribute("data-toggle", "collapse")
         mobileShowServiceInfo($(this))
         changeAllAngleIcons($(this))
+        console.log('third block - ')
     }
 })
 
