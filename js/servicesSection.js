@@ -17,11 +17,11 @@ $(".open-button").on("click", function (e) {
 //services sub categories
 $(".servicesBTN").on("click", function (e) {
     //this loads
-    console.log('in the click')
     //get the data target value of the button that was clicked which is the same as the accordian content IDs
     let dataTarget = this.getAttribute("data-target")
     let servicesDisplayValue = getComputedStyle(document.getElementById('servicesDescriptions')).display
 
+    //all three console.logs fire and log expected results
     console.log('data target ' + dataTarget)
     console.log('services display value ' + servicesDisplayValue)
     console.log('test hasClass' + $(dataTarget).hasClass('show'))
@@ -61,6 +61,7 @@ $('#backBTN').on('click', function (e) {
 
 
 function changeAllAngleIcons(node) { 
+    console.log('change all angle icons')
     if(node) {
         node.find('i').addClass('fa-angle-down').removeClass('fa-angle-right')
         node.siblings().find('i').removeClass('fa-angle-down').addClass('fa-angle-right')
@@ -70,7 +71,7 @@ function changeAllAngleIcons(node) {
 }
 
 function mobileShowServiceInfo(node) {
-
+    console.log('mobile show service info')
     //show the back button
     document.getElementById('backBTN').classList.replace('d-none', 'd-md-none')
 
