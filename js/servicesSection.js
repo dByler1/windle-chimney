@@ -18,7 +18,7 @@ $(".open-button").on("click", function (e) {
 $(".servicesBTN").on("click", function (e) {
     //get the data target value of the button that was clicked which is the same as the accordian content IDs
     let dataTarget = this.getAttribute("data-target")
-    let servicesDisplayValue = $('#servicesDescriptions').css('display')
+    let servicesDisplayValue = getComputedStyle(document.getElementById('servicesDescriptions')).display
 
 
     //if the clicked button's associated card does have the show class, set the data toggle to blank so it won't change
