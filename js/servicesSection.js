@@ -16,31 +16,31 @@ $(".open-button").on("click", function (e) {
 
 //services sub categories
 $(".servicesBTN").on("click", function (e) {
-    //this loads
     //get the data target value of the button that was clicked which is the same as the accordian content IDs
     let dataTarget = this.getAttribute("data-target")
     let servicesDisplayValue = getComputedStyle(document.getElementById('servicesDescriptions')).display
 
-    //all three console.logs fire and log expected results
-    console.log('data target ' + dataTarget)
-    console.log('services display value ' + servicesDisplayValue)
-    console.log('test hasClass' + $(dataTarget).hasClass('show'))
     //if the clicked button's associated card does have the show class, set the data toggle to blank so it won't change
     //none of the logs in the if blocks fire
     if ($(dataTarget).hasClass("show") && servicesDisplayValue === 'block') {
         this.setAttribute("data-toggle", "")
         console.log('first block - already open - display block')
     } else if ($(dataTarget).hasClass("show") && servicesDisplayValue === 'none') {
+        console.log('second block - this.setAttribute')
         this.setAttribute("data-toggle", "")
+        console.log('second block - above mobile show service info')
         mobileShowServiceInfo($(this))
-        console.log('second block - already open - display none - mobile assumption')
+        
     }
     else {
         //give the clicked button a data-toggle of collapse so it will open
+        console.log('third block -  this.set attribute')
         this.setAttribute("data-toggle", "collapse")
+        console.log('third block -  above mobile show service info')
         mobileShowServiceInfo($(this))
+        console.log('third block -  above change all angle icons')
         changeAllAngleIcons($(this))
-        console.log('third block - ')
+        
     }
 })
 
