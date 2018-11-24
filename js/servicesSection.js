@@ -73,9 +73,10 @@ function mobileShowServiceInfo(node) {
     //node.parent().toggleClass('d-flex d-md-flex')
     node.parent().removeClass('d-flex')
     node.parent().addClass('d-none d-md-flex')
-
+    console.log('under the node.parent')
     //show the description column
     let descriptionCol = document.getElementById('servicesDescriptions')
+    console.log(descriptionCol);
     descriptionCol.classList.replace('d-none', 'd-block')
 }
 
