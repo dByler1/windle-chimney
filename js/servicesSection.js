@@ -67,6 +67,7 @@ function changeAllAngleIcons(node) {
 function mobileShowServiceInfo(node) {
     console.log('mobile show service info')
     //show the back button
+    $('#backBTN').removeClass('d-none').addClass('d-md-none')
     //document.getElementById('backBTN').classList.replace('d-none', 'd-md-none')
     console.log('under doc.getElemByID')
     //hide the service buttons column on mobile but leave it visible on larger screens
