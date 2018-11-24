@@ -40,17 +40,20 @@ $(".servicesBTN").on("click", function (e) {
 
 $('#backBTN').on('click', function (e) {
     //hide the back button
-    $(this).toggleClass('d-md-none d-none')
+    //$(this).toggleClass('d-md-none d-none')
+    $(this).removeClass('d-md-none').addClass('d-none')
     changeAllAngleIcons()
     
     //show ther services buttons
-    let servicesBTNCol = document.getElementById('servicesBTN_Column');
-    servicesBTNCol.classList.replace('d-md-flex', 'd-flex')
-    servicesBTNCol.classList.remove('d-none')
+    //let servicesBTNCol = document.getElementById('servicesBTN_Column');
+    $('#servicesBTN_Column').removeClass('d-md-flex d-none').addClass('d-flex')
+    //servicesBTNCol.classList.replace('d-md-flex', 'd-flex')
+    //servicesBTNCol.classList.remove('d-none')
 
     //hide the description column
-    let descriptionCol = document.getElementById('servicesDescriptions')
-    descriptionCol.classList.replace('d-block', 'd-none')
+    //let descriptionCol = document.getElementById('servicesDescriptions')
+    //descriptionCol.classList.replace('d-block', 'd-none')
+    $('#servicesDescriptions').removeClass('d-block').addClass('d-none')
 })
 
 
@@ -68,19 +71,11 @@ function mobileShowServiceInfo(node) {
     console.log('mobile show service info')
     //show the back button
     $('#backBTN').removeClass('d-none').addClass('d-md-none')
-    //document.getElementById('backBTN').classList.replace('d-none', 'd-md-none')
-    console.log('under doc.getElemByID')
     //hide the service buttons column on mobile but leave it visible on larger screens
-    //node.parent().toggleClass('d-flex d-md-flex')
-    console.log(node.parent())
     node.parent().removeClass('d-flex')
     node.parent().addClass('d-none d-md-flex')
-    console.log('under the node.parent')
     //show the description column
     $('#servicesDescriptions').removeClass('d-none').addClass('d-block');
-    //let descriptionCol = document.getElementById('servicesDescriptions')
-    console.log(descriptionCol);
-    descriptionCol.classList.replace('d-none', 'd-block')
 }
 
 
