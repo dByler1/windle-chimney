@@ -24,19 +24,13 @@ $(".servicesBTN").on("click", function (e) {
     //none of the logs in the if blocks fire
     if ($(dataTarget).hasClass("show") && servicesDisplayValue === 'block') {
         this.setAttribute("data-toggle", "")
-        console.log('first block - already open - display block')
     } else if ($(dataTarget).hasClass("show") && servicesDisplayValue === 'none') {
-        console.log('second block - this.setAttribute')
         this.setAttribute("data-toggle", "")
-        console.log('second block - above mobile show service info')
-        mobileShowServiceInfo($(this))
-        
+        mobileShowServiceInfo($(this))  
     }
     else {
         //give the clicked button a data-toggle of collapse so it will open
-        console.log('third block -  this.set attribute')
         this.setAttribute("data-toggle", "collapse")
-        console.log('third block -  above mobile show service info')
         mobileShowServiceInfo($(this))
         console.log('third block -  above change all angle icons')
         changeAllAngleIcons($(this))
@@ -76,8 +70,9 @@ function mobileShowServiceInfo(node) {
     document.getElementById('backBTN').classList.replace('d-none', 'd-md-none')
 
     //hide the service buttons column on mobile but leave it visible on larger screens
-    node.parent().toggleClass('d-flex d-md-flex')
-    node.parent().addClass('d-none')
+    //node.parent().toggleClass('d-flex d-md-flex')
+    node.parent().removeClass('d-flex')
+    node.parent().addClass('d-none d-md-flex')
 
     //show the description column
     let descriptionCol = document.getElementById('servicesDescriptions')
