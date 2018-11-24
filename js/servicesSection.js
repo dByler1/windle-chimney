@@ -68,7 +68,7 @@ function mobileShowServiceInfo(node) {
     console.log('mobile show service info')
     //show the back button
     document.getElementById('backBTN').classList.replace('d-none', 'd-md-none')
-
+    console.log('under doc.getElemByID')
     //hide the service buttons column on mobile but leave it visible on larger screens
     //node.parent().toggleClass('d-flex d-md-flex')
     console.log(node.parent())
