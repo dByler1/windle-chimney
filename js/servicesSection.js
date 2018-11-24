@@ -16,13 +16,16 @@ $(".open-button").on("click", function (e) {
 
 //services sub categories
 $(".servicesBTN").on("click", function (e) {
+    //this loads
     console.log('in the click')
     //get the data target value of the button that was clicked which is the same as the accordian content IDs
     let dataTarget = this.getAttribute("data-target")
     let servicesDisplayValue = getComputedStyle(document.getElementById('servicesDescriptions')).display
 
-
+    console.log('data target ' + dataTarget)
+    console.log('services display value ' + servicesDisplayValue)
     //if the clicked button's associated card does have the show class, set the data toggle to blank so it won't change
+    //none of the logs in the if blocks fire
     if ($(dataTarget).hasClass("show") && servicesDisplayValue === 'block') {
         this.setAttribute("data-toggle", "")
         console.log('first block - already open - display block')
