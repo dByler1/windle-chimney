@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ROUND CORENERS */ 
-.card, .btn-group, .list-unstyled {
+.btn-group {
     border-radius: .25rem;
 }
 
@@ -207,21 +207,6 @@ h1, h2, h3, h4, h5 {
     margin: 0 0 0;
 }
 
-
-
-/* ============================================  Services cards background and borders  ============================================  */
-
-
-#servicesAccordion > .card {
-    border: 0px !important;
-
-}
-
-
-#servicesAccordion > .card > .card-header {
-    border-bottom: 0px !important;
-}
-
 /* ============================================  THE TRHEE ACCORDION BUTTONS ============================================   */
 #accordion .open-button:hover {
     background-color: #b9656c;
@@ -265,6 +250,24 @@ button[data-target='#reviewsCollapse'] {
     background-color: #4c4f5f;
 }
 
+/* ============================================ Accordion Background  ============================================  */ 
+
+#accordion {
+    min-height: 100vh;
+    background: rgba(233, 236, 239, 0.73);
+}
+
+
+/* ============================================  Services cards background and borders  ============================================  */
+
+.card {
+    border: 0px !important;
+}
+
+.card-body {
+    background: #fff;
+}
+
 
 /* ============================================ Services buttons  ============================================  */ 
 
@@ -287,13 +290,14 @@ button[data-target='#reviewsCollapse'] {
     border-color: #4c4f5f !important;
 }
 
-.card-body {
-    background: #fff;
-}
-
 #backBTN {
     text-align: left;
     font-size: 1.3rem;
+}
+
+.servicesBTN {
+    border-radius: 0;
+    text-align: left;
 }
 
 
