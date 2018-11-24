@@ -24,6 +24,7 @@ $(".servicesBTN").on("click", function (e) {
 
     console.log('data target ' + dataTarget)
     console.log('services display value ' + servicesDisplayValue)
+    console.log('test hasClass' + $(dataTarget).hasClass('show'))
     //if the clicked button's associated card does have the show class, set the data toggle to blank so it won't change
     //none of the logs in the if blocks fire
     if ($(dataTarget).hasClass("show") && servicesDisplayValue === 'block') {
