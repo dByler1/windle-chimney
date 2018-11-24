@@ -16,6 +16,7 @@ $(".open-button").on("click", function (e) {
 
 //services sub categories
 $(".servicesBTN").on("click", function (e) {
+    console.log('in the click')
     //get the data target value of the button that was clicked which is the same as the accordian content IDs
     let dataTarget = this.getAttribute("data-target")
     let servicesDisplayValue = getComputedStyle(document.getElementById('servicesDescriptions')).display
