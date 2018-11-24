@@ -34,7 +34,6 @@ $(".servicesBTN").on("click", function (e) {
         mobileShowServiceInfo($(this))
         console.log('third block -  above change all angle icons')
         changeAllAngleIcons($(this))
-        
     }
 })
 
@@ -45,14 +44,9 @@ $('#backBTN').on('click', function (e) {
     changeAllAngleIcons()
     
     //show ther services buttons
-    //let servicesBTNCol = document.getElementById('servicesBTN_Column');
     $('#servicesBTN_Column').removeClass('d-md-flex d-none').addClass('d-flex')
-    //servicesBTNCol.classList.replace('d-md-flex', 'd-flex')
-    //servicesBTNCol.classList.remove('d-none')
 
     //hide the description column
-    //let descriptionCol = document.getElementById('servicesDescriptions')
-    //descriptionCol.classList.replace('d-block', 'd-none')
     $('#servicesDescriptions').removeClass('d-block').addClass('d-none')
 })
 
