@@ -56,6 +56,10 @@ body {
     background: #f8f9fa;
 }
 
+.jumbo {
+    padding: 0px;
+}
+
 /* fix for 15px of right padding on mobile problem - the rows were putting weird padding and negative padding */
 html, body {
     overflow-x: hidden;
