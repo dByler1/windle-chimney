@@ -39,8 +39,7 @@ $(".servicesBTN").on("click", function (e) {
 
 $('#backBTN').on('click', function (e) {
     //hide the back button
-    //$(this).toggleClass('d-md-none d-none')
-    $(this).removeClass('d-md-none').addClass('d-none')
+    $(this).removeClass('d-md-none d-block').addClass('d-none')
     changeAllAngleIcons()
     
     //show ther services buttons
@@ -64,7 +63,7 @@ function changeAllAngleIcons(node) {
 function mobileShowServiceInfo(node) {
     console.log('mobile show service info')
     //show the back button
-    $('#backBTN').removeClass('d-none').addClass('d-md-none')
+    $('#backBTN').removeClass('d-none').addClass('d-md-none d-block')
     //hide the service buttons column on mobile but leave it visible on larger screens
     node.parent().removeClass('d-flex')
     node.parent().addClass('d-none d-md-flex')
