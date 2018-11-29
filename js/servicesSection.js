@@ -10,7 +10,7 @@ $(".open-button").on("click", function (e) {
     } else {
         //give the clicked button a data-toggle of collapse so it will open
         this.setAttribute("data-toggle", "collapse")
-        changeAllAngleIcons($(this))
+        changePlusandMinusSigns($(this))
     }
 })
 
@@ -32,7 +32,6 @@ $(".servicesBTN").on("click", function (e) {
         //give the clicked button a data-toggle of collapse so it will open
         this.setAttribute("data-toggle", "collapse")
         mobileShowServiceInfo($(this))
-        console.log('third block -  above change all angle icons')
         changeAllAngleIcons($(this))
     }
 })
@@ -51,7 +50,6 @@ $('#backBTN').on('click', function (e) {
 
 
 function changeAllAngleIcons(node) { 
-    console.log('change all angle icons')
     if(node) {
         node.find('i').addClass('fa-angle-down').removeClass('fa-angle-right')
         node.siblings().find('i').removeClass('fa-angle-down').addClass('fa-angle-right')
@@ -61,7 +59,6 @@ function changeAllAngleIcons(node) {
 }
 
 function mobileShowServiceInfo(node) {
-    console.log('mobile show service info')
     //show the back button
     $('#backBTN').removeClass('d-none').addClass('d-md-none d-block')
     //hide the service buttons column on mobile but leave it visible on larger screens
@@ -69,6 +66,14 @@ function mobileShowServiceInfo(node) {
     node.parent().addClass('d-none d-md-flex')
     //show the description column
     $('#servicesDescriptions').removeClass('d-none').addClass('d-block');
+}
+
+function changePlusandMinusSigns(node) {
+    let icon = node.find('i')
+    if(!icon.hasClass('fa-minus')) {
+        icon.removeClass('fa-plus').addClass('fa-minus')
+        node.siblings().find('i').removeClass('fa-minus fa-plus').addClass('fa-plus')
+    }
 }
 
 

@@ -298,6 +298,7 @@ button[data-target='#reviewsCollapse'] {
 .servicesBTN {
     border-radius: 0;
     text-align: left;
+    background-color: #E3E3E3;
 }
 
 
