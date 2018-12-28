@@ -12,21 +12,22 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/css.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 </head>
 
 <body>
     <!-- <header class="container-fluid"> -->
-        <!-- nested containers to achive full width background with fixed width content -->
-        <!-- <div class="row dark-bg"> -->
-            <div class="container jumbo">
-                <div class="jumbotron">
-                    <div class="jumbo-media">
-                        <img src="img/UCL-reverse.jpg">
-                    </div>
-                    <h1>UNIVERSAL CHIMNEY LINING</h1>
-                </div>
+    <!-- nested containers to achive full width background with fixed width content -->
+    <!-- <div class="row dark-bg"> -->
+    <div class="container jumbo">
+        <div class="jumbotron">
+            <div class="jumbo-media">
+                <img src="img/UCL-reverse.jpg">
             </div>
-        <!-- </div> -->
+            <h1>UNIVERSAL CHIMNEY LINING</h1>
+        </div>
+    </div>
+    <!-- </div> -->
     <!-- </header> -->
 
     <div class="container light-transparent-bg">
@@ -85,11 +86,12 @@
                 <div class="btn-group btn-group-lg d-flex bg-light">
                     <!-- SERVICES BUTTON-->
                     <button type="button" class="btn btn-info btn-block open-button services" data-parent="#accordion"
-                        data-target="#servicesCollapse" aria-expanded="true" aria-controls="collapseExample">Services
+                        data-target="#servicesCollapse" aria-expanded="true" aria-controls="collapseExample">Our
+                        Services
                         <i class="fas fa-minus"></i></button>
                     <!-- PHOTOS BUTTON-->
                     <button type="button" class="btn btn-info btn-block open-button photos" data-parent="#accordion"
-                        data-target="#photosCollapse" aria-expanded="false" aria-controls="collapseExample">Photos
+                        data-target="#photosCollapse" aria-expanded="false" aria-controls="collapseExample">Projects/Photos
                         <i class="fas fa-plus"></i></button>
                     <!-- REVIEWS BUTTON-->
                     <button type="button" class="btn btn-info btn-block open-button reviews" data-parent="#accordion"
@@ -104,24 +106,33 @@
                         <div class="row">
                             <div class="col-12">
                                 <button type='button' id="backBTN" class="btn btn-block d-none">
-                                     <h5> <i class="back_angle fas fa-angle-left"></i> Back</h5>
+                                    <h5> <i class="back_angle fas fa-angle-left"></i> Back</h5>
                                 </button>
                             </div>
                         </div>
                         <div class="row no-gutters">
                             <div id='servicesBTN_Column' class="col-sm-12 col-md-4 d-flex flex-column">
-                                <button type="button" class="btn servicesBTN" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true">Chimney Liner Installation
+                                <button type="button" class="btn servicesBTN aboutUS" data-toggle="collapse" data-target="#collapseAboutus"
+                                    aria-expanded="true">About Our Company
                                     <i class="fas fa-angle-right d-none d-md-inline-block"></i>
                                     <i class="fas fa-angle-down d-md-none d-inline-block"></i>
+                                </button>
+
+                                <button type="button" class="btn servicesBTN" data-toggle="collapse" data-target="#collapseFlueRepair"
+                                    aria-expanded="false">Flue Repair
+                                    <i class="fas fa-angle-down"></i>
+                                </button>
+                                <button type="button" class="btn servicesBTN" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="false">Chimney Liner Installation
+                                    <i class="fas fa-angle-down"></i>
                                 </button>
 
                                 <button type="button servicesBTN" class="btn servicesBTN" data-toggle="collapse"
                                     data-target="#collapseTwo">Estimates are Free
                                     <i class="fas fa-angle-down"></i>
                                 </button>
-                                <button type="button" class="btn servicesBTN" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <button type="button" class="btn servicesBTN" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
                                     Chimney Certifications <i class="fas fa-angle-down"></i>
                                 </button>
                                 <button class="btn collapsed servicesBTN" type="button" data-toggle="collapse"
@@ -141,7 +152,66 @@
                             <div id='servicesDescriptions' class="col-sm-12 col-md-8 d-none d-md-block">
 
                                 <!-- Lininers  -->
-                                <div id="collapseOne" class="collapse show" data-parent="#servicesAccordion">
+                                <div id="collapseAboutUs" class="collapse show" data-parent="#servicesAccordion">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title d-md-none">About Our Company</h5>
+                                                Universal Chimney Lining is a full service chimney company based out of
+                                                Paoli in Chester County, PA.
+                                                <br />
+                                                <br />
+                                                Our mission is to provide the highest
+                                                quality chimney service, maintenance, and repairs for our customers. By
+                                                educating our customers about their chimney and its functions we can
+                                                best address any issues and concerns while keeping the household safe.
+                                                <br />
+                                                <br />
+                                                Please refer to our reviews, they speak for themselves!
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Flue Repair -->
+                                <div id="collapseFlueRepair" class="collapse" data-parent="#servicesAccordion">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title d-md-none">Flue Repair</h5>
+                                                Fireplace flue liners with cracks and open mortar joints can be
+                                                dangerous when combined with any creosote buildup. A quick video
+                                                inspection will assure that the fireplace is a tight system. In the
+                                                case that these concerning cracks and holes are found, we can offer a
+                                                great repair rather than an expensive new liner.
+                                                <br />
+                                                <br />
+                                                UCL specializes in Fireguard by Firesafe industries resurfacing flue
+                                                repair.
+                                                <br />
+                                                <br />
+                                                The patented FireGuard pure ceramic system is certified, listed, and
+                                                labeled to the previously published U.L. Subject 2425 by Guardian Fire
+                                                Testing Laboratory Inc. (ISO 17025). The FireGuard system is
+                                                specifically designed to correct open mortar joints, misaligned flue
+                                                liners, and fractures within flue liners.
+                                                <br />
+                                                <br />
+                                                Please refer to the manufacturer website for additional information or
+                                                call UCL with any questions.
+                                                <br />
+                                                <br />
+                                                <a href="http://www.firesafeinc.com/products/fireguard" target="blank"> firesafeinc.com</a>
+                                                <br/>
+                                                <br/>
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3fDejuC1NZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Chimney Liner Installation -->
+                                <div id="collapseOne" class="collapse" data-parent="#servicesAccordion">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-12">
