@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/css.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 </head>
 
 <body>
@@ -85,16 +85,16 @@
             <div id="accordion" class="col col-md-10 offset-md-1">
                 <div class="btn-group btn-group-lg d-flex bg-light">
                     <!-- SERVICES BUTTON-->
-                    <button type="button" class="btn btn-info btn-block open-button services" data-parent="#accordion"
+                    <button type="button" class="responsive-width btn btn-info btn-block open-button services" data-parent="#accordion"
                         data-target="#servicesCollapse" aria-expanded="true" aria-controls="collapseExample">Our
                         Services
                         <i class="fas fa-minus"></i></button>
                     <!-- PHOTOS BUTTON-->
-                    <button type="button" class="btn btn-info btn-block open-button photos" data-parent="#accordion"
+                    <button type="button" class="responsive-width btn btn-info btn-block open-button photos" data-parent="#accordion"
                         data-target="#photosCollapse" aria-expanded="false" aria-controls="collapseExample">Projects/Photos
                         <i class="fas fa-plus"></i></button>
                     <!-- REVIEWS BUTTON-->
-                    <button type="button" class="btn btn-info btn-block open-button reviews" data-parent="#accordion"
+                    <button type="button" class="responsive-width btn btn-info btn-block open-button reviews" data-parent="#accordion"
                         data-target="#reviewsCollapse" aria-expanded="false" aria-controls="collapseExample">Reviews
                         <i class="fas fa-plus"></i></button>
                 </div>
@@ -112,17 +112,20 @@
                         </div>
                         <div class="row no-gutters">
                             <div id='servicesBTN_Column' class="col-sm-12 col-md-4 d-flex flex-column">
-                                <button type="button" class="btn servicesBTN aboutUS" data-toggle="collapse" data-target="#collapseAboutus"
-                                    aria-expanded="true">About Our Company
+                                <button type="button servicesBTN" class="btn servicesBTN aboutUS" data-toggle="collapse"
+                                    data-target="#collapseAboutUs" aria-expanded="true">About Our Company
+                                    
                                     <i class="fas fa-angle-right d-none d-md-inline-block"></i>
                                     <i class="fas fa-angle-down d-md-none d-inline-block"></i>
+                                
                                 </button>
 
-                                <button type="button" class="btn servicesBTN" data-toggle="collapse" data-target="#collapseFlueRepair"
+                                <button type="button servicesBTN" class="btn servicesBTN" data-toggle="collapse" data-target="#collapseFlueRepair"
                                     aria-expanded="false">Flue Repair
                                     <i class="fas fa-angle-down"></i>
                                 </button>
-                                <button type="button" class="btn servicesBTN" data-toggle="collapse" data-target="#collapseOne"
+
+                                <button type="button servicesBTN" class="btn servicesBTN" data-toggle="collapse" data-target="#collapseOne"
                                     aria-expanded="false">Chimney Liner Installation
                                     <i class="fas fa-angle-down"></i>
                                 </button>
@@ -156,7 +159,7 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-12">
-                                                <h5 class="card-title d-md-none">About Our Company</h5>
+                                                <h5 class="card-title d-md-none aboutUS">About Our Company</h5>
                                                 Universal Chimney Lining is a full service chimney company based out of
                                                 Paoli in Chester County, PA.
                                                 <br />
@@ -201,10 +204,15 @@
                                                 call UCL with any questions.
                                                 <br />
                                                 <br />
-                                                <a href="http://www.firesafeinc.com/products/fireguard" target="blank"> firesafeinc.com</a>
-                                                <br/>
-                                                <br/>
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3fDejuC1NZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <a href="http://www.firesafeinc.com/products/fireguard" target="blank">
+                                                    firesafeinc.com</a>
+                                                <br />
+                                                <br />
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3fDejuC1NZ4"
+                                                        allowfullscreen>
+                                                    </iframe>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

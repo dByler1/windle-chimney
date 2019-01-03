@@ -48,6 +48,11 @@
         padding-right: 0 !important;
       }
 
+      .responsive-width {
+        padding: .5rem .75rem !important;
+        font-size: 1rem !important;
+    }
+
   }
 
   /* ============================================ Global Settings  ============================================  */
