@@ -1,5 +1,4 @@
-# windle-chimney
-Site for Isaac Windle Universal Chimeny Lining
+# Universal Chimney Lining Business Page
 
 The design goal was a minimalist single page site to communicate business services. 
 
